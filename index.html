@@ -882,5 +882,71 @@
   <div class="toast"></div>
 
   <script src="js/main.js"></script>
+
+<script>
+(function() {
+    var bundleData = [];
+    var section = document.getElementById("bundles");
+    if (!section) {
+        var allSections = document.querySelectorAll("section");
+        for (var s = 0; s < allSections.length; s++) {
+            if (allSections[s].innerHTML.toLowerCase().indexOf("bundle") !== -1) {
+                section = allSections[s];
+                break;
+            }
+        }
+    }
+    if (!section) { console.log("Bundle fix: no bundle section found"); return; }
+    var cards = section.querySelectorAll(".bundle-card");
+    if (cards.length === 0) {
+        var allDivs = section.querySelectorAll("div");
+        var found = [];
+        for (var d = 0; d < allDivs.length; d++) {
+            var cl = allDivs[d].className || "";
+            if (cl.indexOf("card") !== -1 || cl.indexOf("bundle-") !== -1) {
+                found.push(allDivs[d]);
+            }
+        }
+        if (found.length > 0) { cards = found; }
+        else {
+            var grid = section.querySelector("[class*=grid], [class*=container]");
+            if (grid) { cards = grid.children; }
+        }
+    }
+    console.log("Bundle fix: found " + cards.length + " cards for " + bundleData.length + " bundles");
+    for (var i = 0; i < cards.length && i < bundleData.length; i++) {
+        (function(card, data) {
+            if (card.querySelector(".bundle-add-btn")) return;
+            var btn = document.createElement("button");
+            btn.className = "bundle-add-btn";
+            btn.innerHTML = "\u{1F6D2} Add Bundle to Cart";
+            btn.style.cssText = "width:100%;padding:14px 20px;background:#7c3aed;color:#fff;border:none;border-radius:10px;font-weight:700;cursor:pointer;margin-top:16px;font-size:15px;letter-spacing:0.3px;transition:all 0.2s ease;box-shadow:0 2px 8px rgba(124,58,237,0.3);";
+            btn.onmouseover = function() { btn.style.background = "#6d28d9"; btn.style.transform = "scale(1.03)"; };
+            btn.onmouseout = function() { btn.style.background = "#7c3aed"; btn.style.transform = "scale(1)"; };
+            btn.onclick = function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                var added = 0;
+                for (var j = 0; j < data.items.length; j++) {
+                    var item = data.items[j];
+                    if (typeof addToCart === "function") {
+                        addToCart(item.id, item.name, item.price, item.image);
+                        added++;
+                    }
+                }
+                if (typeof showToast === "function") {
+                    showToast(data.name + " (" + added + " items) added to cart!");
+                } else {
+                    alert(data.name + " added to cart!");
+                }
+                btn.innerHTML = "\u2705 Bundle Added!";
+                setTimeout(function() { btn.innerHTML = "\u{1F6D2} Add Bundle to Cart"; }, 2000);
+            };
+            card.appendChild(btn);
+        })(cards[i], bundleData[i]);
+    }
+})();
+</script>
+
 </body>
 </html>
