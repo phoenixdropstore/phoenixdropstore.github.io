@@ -885,10 +885,10 @@
 
 
 
+
 <script>
 (function() {
     var cards = document.querySelectorAll(".bc");
-    console.log("Bundle fix v2: found " + cards.length + " bundle cards");
     for (var i = 0; i < cards.length; i++) {
         (function(card, idx) {
             var nameEl = card.querySelector(".bc-name");
@@ -907,12 +907,10 @@
                 e.preventDefault();
                 e.stopPropagation();
                 var bundleId = "bundle-" + idx;
-                var bundleImg = "";
-                if (typeof addToCart === "function") {
-                    addToCart(bundleId, bName, bPrice, bundleImg);
-                }
-                if (typeof showToast === "function") {
-                    showToast(bName + " added to cart!");
+                if (window.PD && typeof window.PD.addToCart === "function") {
+                    window.PD.addToCart(bundleId, bName, bPrice, "");
+                } else if (typeof addToCart === "function") {
+                    addToCart(bundleId, bName, bPrice, "");
                 }
                 btn.innerHTML = "\u2705 Bundle Added!";
                 btn.style.background = "#16a34a";
