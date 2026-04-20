@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>About | PhoenixDrop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--purple:#7c3aed;--bg:#fafafa;--card:#fff;--text1:#1a1a2e;--text3:#555;--text4:#888;--border:#eee;--font-d:'Instrument Sans',sans-serif;--font-b:'Inter',sans-serif;}
+body{font-family:var(--font-b);background:var(--bg);color:var(--text1);line-height:1.7;}
+.top-bar{background:var(--purple);color:#fff;text-align:center;padding:10px;font-size:.8rem;font-weight:500;letter-spacing:.3px;}
+header{background:var(--card);border-bottom:1px solid var(--border);padding:16px 0;position:sticky;top:0;z-index:100;}
+.hdr-inner{max-width:1100px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;}
+.logo a{text-decoration:none;font-family:var(--font-d);font-size:1.35rem;font-weight:700;color:var(--text1);}
+.logo em{font-style:normal;color:var(--purple);}
+.back-link{color:var(--purple);text-decoration:none;font-weight:600;font-size:.9rem;}
+.back-link:hover{text-decoration:underline;}
+.page-wrap{max-width:760px;margin:0 auto;padding:60px 20px 80px;}
+h1{font-family:var(--font-d);font-size:2rem;font-weight:700;margin-bottom:8px;letter-spacing:-.5px;}
+.subtitle{color:var(--text4);font-size:.92rem;margin-bottom:40px;}
+h2{font-family:var(--font-d);font-size:1.15rem;font-weight:700;margin:32px 0 12px;color:var(--text1);letter-spacing:-.2px;}
+p{color:var(--text3);margin-bottom:14px;font-size:.93rem;}
+.values-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:24px 0 32px;}
+.val-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px 20px;}
+.val-card .vi{font-size:1.5rem;margin-bottom:10px;}
+.val-card .vt{font-family:var(--font-d);font-weight:700;font-size:.95rem;margin-bottom:6px;}
+.val-card .vd{font-size:.82rem;color:var(--text4);line-height:1.5;}
+.mission-box{background:linear-gradient(135deg,#f5f0ff,#ede5ff);border-radius:16px;padding:32px;margin:32px 0;text-align:center;}
+.mission-box .mq{font-family:var(--font-d);font-size:1.2rem;font-weight:700;color:var(--text1);margin-bottom:8px;}
+.mission-box p{color:var(--text3);margin:0;font-size:.9rem;}
+.social-row{display:flex;gap:12px;justify-content:center;margin:24px 0;}
+.social-row a{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:var(--card);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text1);font-weight:600;font-size:.85rem;transition:all .2s;}
+.social-row a:hover{border-color:var(--purple);color:var(--purple);transform:translateY(-2px);}
+.contact-box{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;margin-top:40px;text-align:center;}
+.contact-box h3{font-family:var(--font-d);font-size:1.05rem;margin-bottom:8px;}
+.contact-box a{color:var(--purple);font-weight:600;text-decoration:none;}
+.contact-box a:hover{text-decoration:underline;}
+footer{text-align:center;padding:40px 20px;border-top:1px solid var(--border);margin-top:40px;}
+.f-brand{font-family:var(--font-d);font-weight:700;font-size:1.1rem;}
+.f-brand em{font-style:normal;color:var(--purple);}
+.f-copy{font-size:.75rem;color:var(--text4);margin-top:8px;}
+@media(max-width:600px){.values-grid{grid-template-columns:1fr;}.social-row{flex-direction:column;align-items:center;}h1{font-size:1.5rem;}}
+</style>
+</head>
+<body>
+<div class="top-bar">Free shipping on every order</div>
+<header>
+  <div class="hdr-inner">
+    <div class="logo"><a href="index.html">Phoenix<em>Drop</em></a></div>
+    <a href="index.html" class="back-link">&larr; Back to Store</a>
+  </div>
+</header>
+<div class="page-wrap">
+  <h1>About PhoenixDrop</h1>
+  <p class="subtitle">Clever gadgets, curated weekly, shipped free</p>
+
+  <p>PhoenixDrop started with a simple idea: there are amazing gadgets out there that make everyday life easier, but most people never discover them. We find them so you don't have to.</p>
+  <p>Every week, we scout hundreds of products across the kitchen and workspace categories to find the ones that are actually worth your money. If it doesn't pass our quality check, it doesn't make it to the store.</p>
+
+  <div class="mission-box">
+    <div class="mq">Our mission is simple</div>
+    <p>Find the best gadgets, price them fairly, and ship them to your door for free.</p>
+  </div>
+
+  <h2>What We Stand For</h2>
+  <div class="values-grid">
+    <div class="val-card">
+      <div class="vi">&#x1F50D;</div>
+      <div class="vt">Curated, Not Random</div>
+      <div class="vd">Every product is handpicked. We test for quality, value, and the "wow" factor before listing anything.</div>
+    </div>
+    <div class="val-card">
+      <div class="vi">&#x1F4B0;</div>
+      <div class="vt">Honest Pricing</div>
+      <div class="vd">No inflated prices, no fake discounts. What you see is a fair price for a great product.</div>
+    </div>
+    <div class="val-card">
+      <div class="vi">&#x1F4E6;</div>
+      <div class="vt">Free Shipping Always</div>
+      <div class="vd">Every order ships free, worldwide. No minimums, no surprises at checkout.</div>
+    </div>
+    <div class="val-card">
+      <div class="vi">&#x1F4AC;</div>
+      <div class="vt">Real Support</div>
+      <div class="vd">Got a question? We respond within 24 hours. No bots, no runaround.</div>
+    </div>
+  </div>
+
+  <h2>New Drops Every Week</h2>
+  <p>We're always hunting for the next great find. Follow us on social media to see new arrivals first, product demos, and behind-the-scenes content.</p>
+
+  <div class="social-row">
+    <a href="https://tiktok.com/@phoenixdropstore" target="_blank">&#x1F3B5; TikTok</a>
+    <a href="https://instagram.com/phoenixdropstore" target="_blank">&#x1F4F7; Instagram</a>
+  </div>
+
+  <div class="contact-box">
+    <h3>Get In Touch</h3>
+    <p style="color:var(--text3);font-size:.9rem;">Questions, feedback, or just want to say hi</p>
+    <a href="mailto:modernmonkreset@gmail.com">modernmonkreset@gmail.com</a>
+  </div>
+</div>
+<footer>
+  <div class="f-brand">Phoenix<em>Drop</em></div>
+  <p class="f-copy">&copy; 2025 PhoenixDrop. All rights reserved.</p>
+</footer>
+</body>
+</html>

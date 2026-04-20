@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FAQ | PhoenixDrop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--purple:#7c3aed;--bg:#fafafa;--card:#fff;--text1:#1a1a2e;--text3:#555;--text4:#888;--border:#eee;--font-d:'Instrument Sans',sans-serif;--font-b:'Inter',sans-serif;}
+body{font-family:var(--font-b);background:var(--bg);color:var(--text1);line-height:1.7;}
+.top-bar{background:var(--purple);color:#fff;text-align:center;padding:10px;font-size:.8rem;font-weight:500;letter-spacing:.3px;}
+header{background:var(--card);border-bottom:1px solid var(--border);padding:16px 0;position:sticky;top:0;z-index:100;}
+.hdr-inner{max-width:1100px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;}
+.logo a{text-decoration:none;font-family:var(--font-d);font-size:1.35rem;font-weight:700;color:var(--text1);}
+.logo em{font-style:normal;color:var(--purple);}
+.back-link{color:var(--purple);text-decoration:none;font-weight:600;font-size:.9rem;}
+.back-link:hover{text-decoration:underline;}
+.page-wrap{max-width:760px;margin:0 auto;padding:60px 20px 80px;}
+h1{font-family:var(--font-d);font-size:2rem;font-weight:700;margin-bottom:8px;letter-spacing:-.5px;}
+.subtitle{color:var(--text4);font-size:.92rem;margin-bottom:40px;}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;transition:all .2s;}
+.faq-q{padding:18px 24px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:.93rem;user-select:none;}
+.faq-q:hover{background:#f8f6ff;}
+.faq-arrow{transition:transform .3s;font-size:.8rem;color:var(--text4);}
+.faq-item.open .faq-arrow{transform:rotate(180deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 24px;}
+.faq-item.open .faq-a{max-height:300px;padding:0 24px 18px;}
+.faq-a p{color:var(--text3);font-size:.88rem;margin:0;}
+.contact-box{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;margin-top:40px;text-align:center;}
+.contact-box h3{font-family:var(--font-d);font-size:1.05rem;margin-bottom:8px;}
+.contact-box a{color:var(--purple);font-weight:600;text-decoration:none;}
+.contact-box a:hover{text-decoration:underline;}
+footer{text-align:center;padding:40px 20px;border-top:1px solid var(--border);margin-top:40px;}
+.f-brand{font-family:var(--font-d);font-weight:700;font-size:1.1rem;}
+.f-brand em{font-style:normal;color:var(--purple);}
+.f-copy{font-size:.75rem;color:var(--text4);margin-top:8px;}
+@media(max-width:600px){h1{font-size:1.5rem;}}
+</style>
+</head>
+<body>
+<div class="top-bar">Free shipping on every order</div>
+<header>
+  <div class="hdr-inner">
+    <div class="logo"><a href="index.html">Phoenix<em>Drop</em></a></div>
+    <a href="index.html" class="back-link">&larr; Back to Store</a>
+  </div>
+</header>
+<div class="page-wrap">
+  <h1>Frequently Asked Questions</h1>
+  <p class="subtitle">Quick answers to common questions</p>
+
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How long does shipping take?<span class="faq-arrow">&#x25BC;</span></div>
+    <div class="faq-a"><p>Most orders arrive within 7-15 business days. Processing takes 1-3 business days, and you will receive a tracking number via email once your order ships.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is shipping really free?<span class="faq-arrow">&#x25BC;</span></div>
+    <div class="faq-a"><p>Yes! Every order ships free, worldwide. No minimum order required. The price you see is the price you pay.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What payment methods do you accept?<span class="faq-arrow">&#x25BC;</span></div>
+    <div class="faq-a"><p>We accept PayPal and all major credit/debit cards through PayPal's secure checkout. You don't need a PayPal account to pay with your card.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can I return an item?<span class="faq-arrow">&#x25BC;</span></div>
+    <div class="faq-a"><p>Absolutely. We offer a 30-day return policy. Items must be unused and in original packaging. Contact us to start a return and we will guide you through the process.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">My item arrived damaged. What do I do?<span class="faq-arrow">&#x25BC;</span></div>
+    <div class="faq-a"><p>Contact us within 48 hours of delivery with a photo of the damage. We will send a replacement or issue a full refund at no cost to you.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do you ship internationally?<span class="faq-arrow">&#x25BC;</span></div>
+    <div class="faq-a"><p>Yes, we ship to most countries worldwide. Delivery times may vary depending on your location and local customs processing.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How do I track my order?<span class="faq-arrow">&#x25BC;</span></div>
+    <div class="faq-a"><p>You will receive a tracking number via email once your order ships. Use that number on the carrier's website to see real-time delivery updates.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can I cancel my order?<span class="faq-arrow">&#x25BC;</span></div>
+    <div class="faq-a"><p>Orders can be cancelled within 12 hours of being placed. After that, your order may already be in processing. Contact us as soon as possible if you need to cancel.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How do you choose your products?<span class="faq-arrow">&#x25BC;</span></div>
+    <div class="faq-a"><p>We scout hundreds of products every week and handpick only the ones that offer real value. Every item is checked for quality, usefulness, and that "wow" factor before it makes it to the store.</p></div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">When do you add new products?<span class="faq-arrow">&#x25BC;</span></div>
+    <div class="faq-a"><p>New drops every week! Follow us on TikTok and Instagram (@phoenixdropstore) to see new arrivals first.</p></div>
+  </div>
+
+  <div class="contact-box">
+    <h3>Still Have Questions?</h3>
+    <p style="color:var(--text3);font-size:.9rem;">We usually respond within 24 hours</p>
+    <a href="mailto:modernmonkreset@gmail.com">modernmonkreset@gmail.com</a>
+  </div>
+</div>
+<footer>
+  <div class="f-brand">Phoenix<em>Drop</em></div>
+  <p class="f-copy">&copy; 2025 PhoenixDrop. All rights reserved.</p>
+</footer>
+</body>
+</html>
