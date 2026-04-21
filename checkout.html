@@ -13,7 +13,7 @@ body{font-family:'Inter',sans-serif;background:#f9fafb;color:#111827;
 a{color:#7c3aed;text-decoration:none}
 a:hover{color:#6d28d9;text-decoration:underline}
 
-/* ── Header ─────────────────────────────── */
+/* -- Header ------------------------------- */
 .ck-header{background:#fff;border-bottom:1px solid #e5e7eb;
   padding:16px 24px;display:flex;align-items:center;
   justify-content:space-between}
@@ -23,20 +23,20 @@ a:hover{color:#6d28d9;text-decoration:underline}
 .ck-back{font-size:14px;color:#6b7280}
 .ck-back:hover{color:#7c3aed}
 
-/* ── Layout ─────────────────────────────── */
+/* -- Layout ------------------------------- */
 .ck-wrap{max-width:960px;margin:32px auto;padding:0 20px;width:100%;
   display:grid;grid-template-columns:1fr 380px;gap:32px;flex:1}
 @media(max-width:768px){
   .ck-wrap{grid-template-columns:1fr;gap:24px}
 }
 
-/* ── Cards ──────────────────────────────── */
+/* -- Cards -------------------------------- */
 .ck-card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;
   padding:28px;box-shadow:0 1px 3px rgba(124,58,237,.06)}
 .ck-card h2{font-family:'Instrument Sans',sans-serif;font-size:20px;
   font-weight:700;margin-bottom:20px;color:#111827}
 
-/* ── Order summary ──────────────────────── */
+/* -- Order summary ------------------------ */
 .ck-items{list-style:none}
 .ck-item{display:flex;justify-content:space-between;align-items:center;
   padding:12px 0;border-bottom:1px solid #f3f4f6}
@@ -54,7 +54,7 @@ a:hover{color:#6d28d9;text-decoration:underline}
   font-size:18px;font-weight:700;color:#111827}
 .ck-empty{text-align:center;padding:40px 0;color:#6b7280;font-size:15px}
 
-/* ── Payment card ───────────────────────── */
+/* -- Payment card ------------------------- */
 .ck-email-label{display:block;font-size:13px;font-weight:500;
   color:#374151;margin-bottom:6px}
 .ck-email-input{width:100%;padding:10px 14px;border:1px solid #e5e7eb;
@@ -74,7 +74,7 @@ a:hover{color:#6d28d9;text-decoration:underline}
 .ck-paypal-mark{display:flex;align-items:center;justify-content:center;
   margin-top:12px;gap:8px;font-size:12px;color:#6b7280}
 
-/* ── Footer ─────────────────────────────── */
+/* -- Footer ------------------------------- */
 .ck-footer{text-align:center;padding:20px;font-size:12px;color:#9ca3af;
   border-top:1px solid #f3f4f6;margin-top:auto}
 </style>
@@ -126,14 +126,14 @@ a:hover{color:#6d28d9;text-decoration:underline}
 
 <div class="ck-footer">&copy; 2025 PhoenixDrop. All rights reserved.</div>
 
-<!-- ─── JS: reads cart, builds PayPal form, POSTs to paypal.com ─── -->
+<!-- --- JS: reads cart, builds PayPal form, POSTs to paypal.com --- -->
 <script>
 (function () {
   var PAYPAL = "modernmonkreset@gmail.com";
   var RETURN_URL = "https://phoenixdropstore.github.io/thank-you.html";
   var CANCEL_URL = "https://phoenixdropstore.github.io";
 
-  /* ── Load cart ───────────────────────── */
+  /* -- Load cart ------------------------- */
   var cart = [];
   try { cart = JSON.parse(localStorage.getItem("pd_cart") || "[]"); } catch (e) { cart = []; }
 
@@ -148,7 +148,7 @@ a:hover{color:#6d28d9;text-decoration:underline}
     return;
   }
 
-  /* ── Render items ────────────────────── */
+  /* -- Render items ---------------------- */
   var subtotal = 0;
   var html = "";
   for (var i = 0; i < cart.length; i++) {
@@ -176,7 +176,7 @@ a:hover{color:#6d28d9;text-decoration:underline}
   subtotalEl.textContent = "$" + subtotal.toFixed(2);
   totalEl.textContent = "$" + subtotal.toFixed(2);
 
-  /* ── Checkout handler ────────────────── */
+  /* -- Checkout handler ------------------ */
   window.handleCheckout = function () {
     if (!cart || cart.length === 0) { alert("Cart is empty."); return; }
 

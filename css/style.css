@@ -25,7 +25,7 @@
 html{scroll-behavior:smooth}
 body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased}
 
-/* ── ANNOUNCEMENT ────────────────────────────────────────── */
+/* -- ANNOUNCEMENT ------------------------------------------ */
 .announce{
   background:var(--accent);color:#fff;text-align:center;
   padding:10px 16px;font-size:.78rem;font-weight:500;
@@ -37,7 +37,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:
   letter-spacing:.5px;
 }
 
-/* ── HEADER ──────────────────────────────────────────────── */
+/* -- HEADER ------------------------------------------------ */
 .header{
   position:sticky;top:0;z-index:200;
   background:rgba(250,250,250,.85);
@@ -86,7 +86,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:
 .cart-count.pop{animation:pop .3s var(--ease)}
 @keyframes pop{50%{transform:scale(1.35)}}
 
-/* ── HERO ────────────────────────────────────────────────── */
+/* -- HERO -------------------------------------------------- */
 .hero{max-width:1280px;margin:0 auto;padding:64px 24px 48px;text-align:center}
 .hero h1{
   font-family:var(--font-d);font-size:clamp(2.2rem,5vw,3.5rem);
@@ -101,7 +101,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:
 }
 .trust svg{width:16px;height:16px;flex-shrink:0}
 
-/* ── GRID ────────────────────────────────────────────────── */
+/* -- GRID -------------------------------------------------- */
 .main{max-width:1280px;margin:0 auto;padding:0 24px 80px}
 .grid-top{
   display:flex;align-items:center;justify-content:space-between;
@@ -113,7 +113,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:
   display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;
 }
 
-/* ── CARD ────────────────────────────────────────────────── */
+/* -- CARD -------------------------------------------------- */
 .card{
   background:var(--surface);border:1px solid var(--border-l);
   border-radius:var(--r-lg);overflow:hidden;
@@ -173,7 +173,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:
 .btn-add.added{background:var(--green)}
 .btn-add svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2}
 
-/* ── PRODUCT MODAL ───────────────────────────────────────── */
+/* -- PRODUCT MODAL ----------------------------------------- */
 .modal-overlay{
   position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:500;
   opacity:0;pointer-events:none;transition:opacity .3s var(--ease);
@@ -240,7 +240,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:
 }
 .modal-trust span{font-size:.75rem;color:var(--text4);display:flex;align-items:center;gap:4px}
 
-/* ── CART DRAWER ─────────────────────────────────────────── */
+/* -- CART DRAWER ------------------------------------------- */
 .cart-overlay{
   position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:300;
   opacity:0;pointer-events:none;transition:opacity .3s var(--ease);
@@ -305,7 +305,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:
   margin-top:6px;font-size:.7rem;color:var(--text4);
 }
 
-/* ── BUNDLES ─────────────────────────────────────────────── */
+/* -- BUNDLES ----------------------------------------------- */
 .bundles{background:var(--surface2);padding:56px 24px;border-top:1px solid var(--border-l)}
 .bundles-w{max-width:1280px;margin:0 auto}
 .bg{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px;margin-top:24px}
@@ -327,12 +327,12 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:
   border-bottom:1px solid var(--border-l);
 }
 .bc-list li:last-child{border:none}
-.bc-list li::before{content:'→';color:var(--purple);font-weight:600;flex-shrink:0}
+.bc-list li::before{content:'->';color:var(--purple);font-weight:600;flex-shrink:0}
 .bc-bot{display:flex;align-items:baseline;gap:8px}
 .bc-price{font-family:var(--font-d);font-size:1.3rem;font-weight:700}
 .bc-was{font-size:.82rem;color:var(--text4);text-decoration:line-through}
 
-/* ── FOOTER ──────────────────────────────────────────────── */
+/* -- FOOTER ------------------------------------------------ */
 footer{border-top:1px solid var(--border-l);padding:36px 24px;text-align:center}
 .f-brand{font-family:var(--font-d);font-size:1.1rem;font-weight:700;margin-bottom:8px}
 .f-brand em{font-style:normal;color:var(--purple)}
@@ -341,7 +341,7 @@ footer{border-top:1px solid var(--border-l);padding:36px 24px;text-align:center}
 .f-links a:hover{color:var(--text)}
 .f-copy{font-size:.7rem;color:var(--text4)}
 
-/* ── RESPONSIVE ──────────────────────────────────────────── */
+/* -- RESPONSIVE -------------------------------------------- */
 @media(max-width:768px){
   .hero{padding:44px 20px 36px}
   .hero h1{font-size:2rem}
@@ -365,7 +365,7 @@ footer{border-top:1px solid var(--border-l);padding:36px 24px;text-align:center}
   .cart-drawer{width:100%;max-width:100%}
 }
 
-/* ── ANIMATIONS ──────────────────────────────────────────── */
+/* -- ANIMATIONS -------------------------------------------- */
 .card{opacity:0;transform:translateY(10px);animation:up .35s var(--ease) forwards}
 .card:nth-child(1){animation-delay:.02s}.card:nth-child(2){animation-delay:.04s}
 .card:nth-child(3){animation-delay:.06s}.card:nth-child(4){animation-delay:.08s}
