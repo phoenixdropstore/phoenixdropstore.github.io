@@ -1,685 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout - PhoenixDrop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Checkout &mdash; PhoenixDrop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#f9fafb;color:#111827;
+  min-height:100vh;display:flex;flex-direction:column}
+a{color:#7c3aed;text-decoration:none}
+a:hover{color:#6d28d9;text-decoration:underline}
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #f9fafb;
-            color: #111827;
-            min-height: 100vh;
-        }
+/* ── Header ─────────────────────────────── */
+.ck-header{background:#fff;border-bottom:1px solid #e5e7eb;
+  padding:16px 24px;display:flex;align-items:center;
+  justify-content:space-between}
+.ck-logo{font-family:'Instrument Sans',sans-serif;font-size:22px;
+  font-weight:700;color:#111827}
+.ck-logo span{color:#7c3aed}
+.ck-back{font-size:14px;color:#6b7280}
+.ck-back:hover{color:#7c3aed}
 
-        .checkout-header {
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-            padding: 16px 24px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+/* ── Layout ─────────────────────────────── */
+.ck-wrap{max-width:960px;margin:32px auto;padding:0 20px;width:100%;
+  display:grid;grid-template-columns:1fr 380px;gap:32px;flex:1}
+@media(max-width:768px){
+  .ck-wrap{grid-template-columns:1fr;gap:24px}
+}
 
-        .checkout-header .logo {
-            font-family: 'Instrument Sans', sans-serif;
-            font-size: 24px;
-            font-weight: 700;
-            color: #111827;
-            text-decoration: none;
-        }
+/* ── Cards ──────────────────────────────── */
+.ck-card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;
+  padding:28px;box-shadow:0 1px 3px rgba(124,58,237,.06)}
+.ck-card h2{font-family:'Instrument Sans',sans-serif;font-size:20px;
+  font-weight:700;margin-bottom:20px;color:#111827}
 
-        .checkout-header .logo span {
-            color: #7c3aed;
-        }
+/* ── Order summary ──────────────────────── */
+.ck-items{list-style:none}
+.ck-item{display:flex;justify-content:space-between;align-items:center;
+  padding:12px 0;border-bottom:1px solid #f3f4f6}
+.ck-item:last-child{border-bottom:none}
+.ck-item-left{display:flex;align-items:center;gap:12px;flex:1}
+.ck-item-img{width:56px;height:56px;border-radius:8px;object-fit:cover;
+  background:#f3f4f6}
+.ck-item-name{font-size:14px;font-weight:500;color:#111827}
+.ck-item-qty{font-size:12px;color:#6b7280;margin-top:2px}
+.ck-item-price{font-size:14px;font-weight:600;color:#111827;white-space:nowrap}
+.ck-divider{border:none;border-top:1px solid #e5e7eb;margin:16px 0}
+.ck-row{display:flex;justify-content:space-between;padding:6px 0;
+  font-size:14px;color:#6b7280}
+.ck-total{display:flex;justify-content:space-between;padding:12px 0;
+  font-size:18px;font-weight:700;color:#111827}
+.ck-empty{text-align:center;padding:40px 0;color:#6b7280;font-size:15px}
 
-        .checkout-header .secure-badge {
-            font-size: 13px;
-            color: #10b981;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
+/* ── Payment card ───────────────────────── */
+.ck-email-label{display:block;font-size:13px;font-weight:500;
+  color:#374151;margin-bottom:6px}
+.ck-email-input{width:100%;padding:10px 14px;border:1px solid #e5e7eb;
+  border-radius:8px;font-size:14px;font-family:'Inter',sans-serif;
+  outline:none;transition:border .2s}
+.ck-email-input:focus{border-color:#7c3aed;box-shadow:0 0 0 3px rgba(124,58,237,.1)}
+.ck-email-hint{font-size:11px;color:#9ca3af;margin-top:4px}
+.ck-pay-btn{width:100%;margin-top:20px;padding:14px;border:none;
+  border-radius:10px;background:#7c3aed;color:#fff;font-size:16px;
+  font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;
+  transition:background .2s,transform .1s}
+.ck-pay-btn:hover{background:#6d28d9;transform:translateY(-1px)}
+.ck-pay-btn:active{transform:translateY(0)}
+.ck-pay-btn:disabled{background:#d1d5db;cursor:not-allowed;transform:none}
+.ck-secure{display:flex;align-items:center;justify-content:center;
+  gap:6px;margin-top:14px;font-size:12px;color:#9ca3af}
+.ck-paypal-mark{display:flex;align-items:center;justify-content:center;
+  margin-top:12px;gap:8px;font-size:12px;color:#6b7280}
 
-        .checkout-container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 32px 20px;
-            display: grid;
-            grid-template-columns: 1fr 380px;
-            gap: 32px;
-        }
-
-        @media (max-width: 768px) {
-            .checkout-container {
-                grid-template-columns: 1fr;
-                padding: 20px 16px;
-                gap: 20px;
-            }
-        }
-
-        .section-card {
-            background: #ffffff;
-            border-radius: 16px;
-            border: 1px solid #e5e7eb;
-            padding: 28px;
-        }
-
-        .section-title {
-            font-family: 'Instrument Sans', sans-serif;
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #111827;
-        }
-
-        .form-group {
-            margin-bottom: 16px;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 13px;
-            font-weight: 600;
-            color: #6b7280;
-            margin-bottom: 6px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 12px 16px;
-            border: 1px solid #e5e7eb;
-            border-radius: 10px;
-            font-family: 'Inter', sans-serif;
-            font-size: 15px;
-            color: #111827;
-            background: #ffffff;
-            transition: border-color 0.2s;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: #7c3aed;
-            box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
-        }
-
-        .form-group input.error {
-            border-color: #ef4444;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-        }
-
-        @media (max-width: 480px) {
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .order-summary {
-            position: sticky;
-            top: 20px;
-        }
-
-        .order-items {
-            margin-bottom: 20px;
-        }
-
-        .order-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 12px 0;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .order-item:last-child {
-            border-bottom: none;
-        }
-
-        .order-item-image {
-            width: 60px;
-            height: 60px;
-            border-radius: 8px;
-            object-fit: cover;
-            background: #f9fafb;
-        }
-
-        .order-item-details {
-            flex: 1;
-        }
-
-        .order-item-name {
-            font-size: 14px;
-            font-weight: 600;
-            color: #111827;
-            margin-bottom: 2px;
-        }
-
-        .order-item-qty {
-            font-size: 12px;
-            color: #6b7280;
-        }
-
-        .order-item-price {
-            font-size: 15px;
-            font-weight: 700;
-            color: #111827;
-        }
-
-        .order-totals {
-            border-top: 2px solid #e5e7eb;
-            padding-top: 16px;
-        }
-
-        .order-total-row {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 8px;
-            font-size: 14px;
-            color: #6b7280;
-        }
-
-        .order-total-row.grand-total {
-            font-size: 18px;
-            font-weight: 700;
-            color: #111827;
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px solid #e5e7eb;
-        }
-
-        .order-total-row .free-tag {
-            color: #10b981;
-            font-weight: 600;
-        }
-
-        .pay-button {
-            width: 100%;
-            padding: 16px 24px;
-            background: #7c3aed;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-family: 'Instrument Sans', sans-serif;
-            font-size: 17px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: background 0.2s;
-            margin-top: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-
-        .pay-button:hover {
-            background: #6d28d9;
-        }
-
-        .pay-button:disabled {
-            background: #6b7280;
-            cursor: not-allowed;
-        }
-
-        .pay-button .spinner {
-            display: none;
-            width: 20px;
-            height: 20px;
-            border: 2px solid rgba(255,255,255,0.3);
-            border-top-color: white;
-            border-radius: 50%;
-            animation: spin 0.6s linear infinite;
-        }
-
-        .pay-button.loading .spinner {
-            display: block;
-        }
-
-        .pay-button.loading .btn-text {
-            display: none;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        .empty-cart {
-            text-align: center;
-            padding: 48px 20px;
-        }
-
-        .empty-cart h2 {
-            font-family: 'Instrument Sans', sans-serif;
-            margin-bottom: 12px;
-        }
-
-        .empty-cart a {
-            color: #7c3aed;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 16px;
-            font-size: 12px;
-            color: #6b7280;
-        }
-
-        .trust-badges span {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .error-message {
-            color: #ef4444;
-            font-size: 12px;
-            margin-top: 4px;
-            display: none;
-        }
-
-        .back-link {
-            color: #7c3aed;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+/* ── Footer ─────────────────────────────── */
+.ck-footer{text-align:center;padding:20px;font-size:12px;color:#9ca3af;
+  border-top:1px solid #f3f4f6;margin-top:auto}
+</style>
 </head>
 <body>
 
-    <div class="checkout-header">
-        <a href="index.html" class="logo">Phoenix<span>Drop</span></a>
-        <div class="secure-badge">
-            &#128274; Secure Checkout
-        </div>
+<!-- Header -->
+<div class="ck-header">
+  <div class="ck-logo">Phoenix<span>Drop</span></div>
+  <a href="index.html" class="ck-back">&larr; Back to store</a>
+</div>
+
+<!-- Main -->
+<div class="ck-wrap">
+
+  <!-- Left: Order Summary -->
+  <div class="ck-card">
+    <h2>Order Summary</h2>
+    <ul class="ck-items" id="ck-items"></ul>
+    <hr class="ck-divider">
+    <div class="ck-row"><span>Subtotal</span><span id="ck-subtotal">\$0.00</span></div>
+    <div class="ck-row"><span>Shipping</span><span id="ck-shipping">FREE</span></div>
+    <hr class="ck-divider">
+    <div class="ck-total"><span>Total</span><span id="ck-total">\$0.00</span></div>
+  </div>
+
+  <!-- Right: Payment -->
+  <div class="ck-card">
+    <h2>Payment</h2>
+    <label class="ck-email-label" for="ck-email">Email (for order updates)</label>
+    <input type="email" id="ck-email" class="ck-email-input"
+           placeholder="you@email.com">
+    <div class="ck-email-hint">Optional &mdash; PayPal will also send a receipt.</div>
+
+    <button type="button" class="ck-pay-btn" id="ck-pay-btn"
+            onclick="handleCheckout()">
+      Pay with PayPal
+    </button>
+
+    <div class="ck-secure">
+      &#128274; Secure checkout via PayPal
     </div>
-
-    <div id="emptyCart" class="empty-cart" style="display:none;">
-        <h2>Your cart is empty</h2>
-        <p>Add some items first!</p>
-        <br>
-        <a href="index.html">&#8592; Back to store</a>
+    <div class="ck-paypal-mark">
+      Powered by <strong>PayPal</strong>
     </div>
+  </div>
 
-    <div class="checkout-container" id="checkoutContainer">
+</div>
 
-        <div class="shipping-form">
-            <a href="index.html" class="back-link">&#8592; Back to store</a>
+<div class="ck-footer">&copy; 2025 PhoenixDrop. All rights reserved.</div>
 
-            <br><br>
-
-            <div class="section-card">
-                <h2 class="section-title">Contact Information</h2>
-                <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" id="email" placeholder="you@example.com" required>
-                    <div class="error-message" id="emailError">Please enter a valid email</div>
-                </div>
-                <div class="form-group">
-                    <label>Phone</label>
-                    <input type="tel" id="phone" placeholder="(555) 555-5555">
-                </div>
-            </div>
-
-            <br>
-
-            <div class="section-card">
-                <h2 class="section-title">Shipping Address</h2>
-                <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" id="fullName" placeholder="John Doe" required>
-                    <div class="error-message" id="nameError">Please enter your name</div>
-                </div>
-                <div class="form-group">
-                    <label>Street Address</label>
-                    <input type="text" id="address1" placeholder="123 Main St" required>
-                    <div class="error-message" id="address1Error">Please enter your address</div>
-                </div>
-                <div class="form-group">
-                    <label>Apartment, suite, etc. (optional)</label>
-                    <input type="text" id="address2" placeholder="Apt 4B">
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>City</label>
-                        <input type="text" id="city" placeholder="New York" required>
-                        <div class="error-message" id="cityError">Required</div>
-                    </div>
-                    <div class="form-group">
-                        <label>State / Province</label>
-                        <input type="text" id="state" placeholder="NY" required>
-                        <div class="error-message" id="stateError">Required</div>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>ZIP / Postal Code</label>
-                        <input type="text" id="zip" placeholder="10001" required>
-                        <div class="error-message" id="zipError">Required</div>
-                    </div>
-                    <div class="form-group">
-                        <label>Country</label>
-                        <select id="country">
-                            <option value="US">United States</option>
-                            <option value="CA">Canada</option>
-                            <option value="GB">United Kingdom</option>
-                            <option value="AU">Australia</option>
-                            <option value="DE">Germany</option>
-                            <option value="FR">France</option>
-                            <option value="NL">Netherlands</option>
-                            <option value="SE">Sweden</option>
-                            <option value="NO">Norway</option>
-                            <option value="DK">Denmark</option>
-                            <option value="IT">Italy</option>
-                            <option value="ES">Spain</option>
-                            <option value="JP">Japan</option>
-                            <option value="KR">South Korea</option>
-                            <option value="SG">Singapore</option>
-                            <option value="NZ">New Zealand</option>
-                            <option value="IE">Ireland</option>
-                            <option value="BE">Belgium</option>
-                            <option value="AT">Austria</option>
-                            <option value="CH">Switzerland</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="section-card">
-                <h2 class="section-title">Order Notes (optional)</h2>
-                <div class="form-group">
-                    <input type="text" id="notes" placeholder="Any special instructions...">
-                </div>
-            </div>
-        </div>
-
-        <div class="order-summary">
-            <div class="section-card">
-                <h2 class="section-title">Order Summary</h2>
-                <div class="order-items" id="orderItems">
-                </div>
-                <div class="order-totals">
-                    <div class="order-total-row">
-                        <span>Subtotal</span>
-                        <span id="subtotalDisplay">\$0.00</span>
-                    </div>
-                    <div class="order-total-row">
-                        <span>Shipping</span>
-                        <span class="free-tag">FREE</span>
-                    </div>
-                    <div class="order-total-row grand-total">
-                        <span>Total</span>
-                        <span id="totalDisplay">\$0.00</span>
-                    </div>
-                </div>
-
-                <button class="pay-button" id="payButton" onclick="handleCheckout()">
-                    <span class="spinner"></span>
-                    <span class="btn-text">&#128274; Pay with PayPal</span>
-                </button>
-
-                <div class="trust-badges">
-                    <span>&#128274; SSL Secure</span>
-                    <span>&#128230; Free Shipping</span>
-                    <span>&#128176; Money Back</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<!-- ─── JS: reads cart, builds PayPal form, POSTs to paypal.com ─── -->
 <script>
-var PAYPAL_EMAIL = 'modernmonkreset@gmail.com';
-var STORE_URL = 'https://phoenixdropstore.github.io';
+(function () {
+  var PAYPAL = "modernmonkreset@gmail.com";
+  var RETURN_URL = "https://phoenixdropstore.github.io/thank-you.html";
+  var CANCEL_URL = "https://phoenixdropstore.github.io";
 
-function getCart() {
-    try {
-        var raw = localStorage.getItem('pd_cart');
-        if (!raw) return [];
-        return JSON.parse(raw);
-    } catch(e) {
-        return [];
-    }
-}
+  /* ── Load cart ───────────────────────── */
+  var cart = [];
+  try { cart = JSON.parse(localStorage.getItem("pd_cart") || "[]"); } catch (e) { cart = []; }
 
-function renderOrderSummary() {
-    var cart = getCart();
-    var container = document.getElementById('orderItems');
-    var subtotalEl = document.getElementById('subtotalDisplay');
-    var totalEl = document.getElementById('totalDisplay');
-    var checkoutContainer = document.getElementById('checkoutContainer');
-    var emptyCart = document.getElementById('emptyCart');
+  var itemsEl = document.getElementById("ck-items");
+  var subtotalEl = document.getElementById("ck-subtotal");
+  var totalEl = document.getElementById("ck-total");
+  var payBtn = document.getElementById("ck-pay-btn");
 
-    if (!cart || cart.length === 0) {
-        checkoutContainer.style.display = 'none';
-        emptyCart.style.display = 'block';
-        return;
-    }
+  if (!cart || cart.length === 0) {
+    itemsEl.innerHTML = '<li class="ck-empty">Your cart is empty.<br><a href="index.html">Browse products</a></li>';
+    payBtn.disabled = true;
+    return;
+  }
 
-    var html = '';
-    var subtotal = 0;
+  /* ── Render items ────────────────────── */
+  var subtotal = 0;
+  var html = "";
+  for (var i = 0; i < cart.length; i++) {
+    var item = cart[i];
+    var price = parseFloat(item.price) || 0;
+    var qty = parseInt(item.qty, 10) || 1;
+    var line = price * qty;
+    subtotal += line;
 
-    for (var i = 0; i < cart.length; i++) {
-        var item = cart[i];
-        var name = item.name || item.title || 'Product';
-        var price = parseFloat(item.sell_price || item.price || 0);
-        var qty = parseInt(item.qty || item.quantity || 1);
-        var image = item.image_url || item.image || '';
-        var lineTotal = price * qty;
-        subtotal = subtotal + lineTotal;
+    var imgSrc = item.image || item.image_url || "";
+    var imgTag = imgSrc
+      ? '<img class="ck-item-img" src="' + imgSrc + '" alt="">'
+      : '<div class="ck-item-img"></div>';
 
-        html = html + '<div class="order-item">';
-        if (image) {
-            html = html + '<img class="order-item-image" src="' + image + '" alt="' + name + '">';
-        } else {
-            html = html + '<div class="order-item-image"></div>';
-        }
-        html = html + '<div class="order-item-details">';
-        html = html + '<div class="order-item-name">' + name.substring(0, 50) + '</div>';
-        html = html + '<div class="order-item-qty">Qty: ' + qty + '</div>';
-        html = html + '</div>';
-        html = html + '<div class="order-item-price">$' + lineTotal.toFixed(2) + '</div>';
-        html = html + '</div>';
-    }
+    html += '<li class="ck-item">'
+      + '<div class="ck-item-left">'
+      + imgTag
+      + '<div><div class="ck-item-name">' + (item.name || "Product") + '</div>'
+      + '<div class="ck-item-qty">Qty: ' + qty + '</div></div>'
+      + '</div>'
+      + '<div class="ck-item-price">$' + line.toFixed(2) + '</div>'
+      + '</li>';
+  }
+  itemsEl.innerHTML = html;
+  subtotalEl.textContent = "$" + subtotal.toFixed(2);
+  totalEl.textContent = "$" + subtotal.toFixed(2);
 
-    container.innerHTML = html;
-    subtotalEl.textContent = '$' + subtotal.toFixed(2);
-    totalEl.textContent = '$' + subtotal.toFixed(2);
-}
+  /* ── Checkout handler ────────────────── */
+  window.handleCheckout = function () {
+    if (!cart || cart.length === 0) { alert("Cart is empty."); return; }
 
-function validateForm() {
-    var valid = true;
-    var fields = [
-        {id: 'email', error: 'emailError', check: 'email'},
-        {id: 'fullName', error: 'nameError', check: 'text'},
-        {id: 'address1', error: 'address1Error', check: 'text'},
-        {id: 'city', error: 'cityError', check: 'text'},
-        {id: 'state', error: 'stateError', check: 'text'},
-        {id: 'zip', error: 'zipError', check: 'text'}
-    ];
+    payBtn.disabled = true;
+    payBtn.textContent = "Redirecting to PayPal\u2026";
 
-    for (var i = 0; i < fields.length; i++) {
-        var field = fields[i];
-        var input = document.getElementById(field.id);
-        var error = document.getElementById(field.error);
-        var value = input.value.trim();
-
-        if (field.check === 'email') {
-            var emailOk = value.indexOf('@') > 0 && value.indexOf('.') > value.indexOf('@');
-            if (!emailOk) {
-                input.className = 'error';
-                error.style.display = 'block';
-                valid = false;
-            } else {
-                input.className = '';
-                error.style.display = 'none';
-            }
-        } else {
-            if (!value) {
-                input.className = 'error';
-                error.style.display = 'block';
-                valid = false;
-            } else {
-                input.className = '';
-                error.style.display = 'none';
-            }
-        }
-    }
-
-    return valid;
-}
-
-function buildOrderSummaryText() {
-    var cart = getCart();
-    var lines = [];
-    var total = 0;
-
-    for (var i = 0; i < cart.length; i++) {
-        var item = cart[i];
-        var name = item.name || item.title || 'Product';
-        var price = parseFloat(item.sell_price || item.price || 0);
-        var qty = parseInt(item.qty || item.quantity || 1);
-        var lineTotal = price * qty;
-        total = total + lineTotal;
-        lines.push(qty + 'x ' + name.substring(0, 40) + ' - $' + lineTotal.toFixed(2));
-    }
-
-    lines.push('---');
-    lines.push('TOTAL: $' + total.toFixed(2));
-    return lines.join(' | ');
-}
-
-function buildPayPalUrl() {
-    var cart = getCart();
-    var total = 0;
-    var itemNames = [];
-
-    for (var i = 0; i < cart.length; i++) {
-        var item = cart[i];
-        var price = parseFloat(item.sell_price || item.price || 0);
-        var qty = parseInt(item.qty || item.quantity || 1);
-        total = total + (price * qty);
-        var name = (item.name || item.title || 'Item').substring(0, 30);
-        itemNames.push(qty + 'x ' + name);
-    }
-
-    var itemName = 'PhoenixDrop Order: ' + itemNames.join(', ');
-    if (itemName.length > 120) {
-        itemName = itemName.substring(0, 117) + '...';
-    }
-
-    var shipping = document.getElementById('fullName').value.trim()
-        + ' | ' + document.getElementById('email').value.trim()
-        + ' | ' + document.getElementById('phone').value.trim()
-        + ' | ' + document.getElementById('address1').value.trim()
-        + (document.getElementById('address2').value.trim() ? ', ' + document.getElementById('address2').value.trim() : '')
-        + ', ' + document.getElementById('city').value.trim()
-        + ', ' + document.getElementById('state').value.trim()
-        + ' ' + document.getElementById('zip').value.trim()
-        + ', ' + document.getElementById('country').value;
-
-    var url = 'https://www.paypal.com/cgi-bin/webscr'
-        + '?cmd=_xclick'
-        + '&business=' + encodeURIComponent(PAYPAL_EMAIL)
-        + '&amount=' + total.toFixed(2)
-        + '&item_name=' + encodeURIComponent(itemName)
-        + '&currency_code=USD'
-        + '&no_shipping=0'
-        + '&custom=' + encodeURIComponent(shipping)
-        + '&return=' + encodeURIComponent(STORE_URL + '/thank-you.html')
-        + '&cancel_return=' + encodeURIComponent(STORE_URL + '/checkout.html');
-
-    return url;
-}
-
-function saveOrderLocally() {
+    /* Save order locally BEFORE redirect */
     var order = {
-        id: 'PD-' + Date.now(),
-        customer: {
-            email: document.getElementById('email').value.trim(),
-            phone: document.getElementById('phone').value.trim(),
-            name: document.getElementById('fullName').value.trim(),
-            address1: document.getElementById('address1').value.trim(),
-            address2: document.getElementById('address2').value.trim(),
-            city: document.getElementById('city').value.trim(),
-            state: document.getElementById('state').value.trim(),
-            zip: document.getElementById('zip').value.trim(),
-            country: document.getElementById('country').value
-        },
-        items: getCart(),
-        notes: document.getElementById('notes').value.trim(),
-        total: 0,
-        created_at: new Date().toISOString(),
-        status: 'pending_payment'
+      id: "PD-" + Date.now(),
+      items: cart,
+      total: subtotal,
+      email: document.getElementById("ck-email").value || "",
+      date: new Date().toISOString(),
+      status: "pending"
     };
-
-    var total = 0;
-    for (var i = 0; i < order.items.length; i++) {
-        var item = order.items[i];
-        var price = parseFloat(item.sell_price || item.price || 0);
-        var qty = parseInt(item.qty || item.quantity || 1);
-        total = total + (price * qty);
-    }
-    order.total = total;
-
     var orders = [];
-    try {
-        var raw = localStorage.getItem('pd_orders');
-        if (raw) orders = JSON.parse(raw);
-    } catch(e) {}
+    try { orders = JSON.parse(localStorage.getItem("pd_orders") || "[]"); } catch (e) { orders = []; }
     orders.push(order);
-    localStorage.setItem('pd_orders', JSON.stringify(orders));
+    localStorage.setItem("pd_orders", JSON.stringify(orders));
 
-    return order;
-}
+    /* Build a hidden form that POSTs to paypal.com (NOT our domain) */
+    var form = document.createElement("form");
+    form.method = "POST";
+    form.action = "https://www.paypal.com/cgi-bin/webscr";
 
-function handleCheckout() {
-    if (!validateForm()) {
-        return;
+    function addF(n, v) {
+      var inp = document.createElement("input");
+      inp.type = "hidden"; inp.name = n; inp.value = v;
+      form.appendChild(inp);
     }
 
-    var btn = document.getElementById('payButton');
-    btn.className = 'pay-button loading';
-    btn.disabled = true;
+    addF("cmd", "_cart");
+    addF("upload", "1");
+    addF("business", PAYPAL);
+    addF("currency_code", "USD");
+    addF("return", RETURN_URL);
+    addF("cancel_return", CANCEL_URL);
+    addF("custom", order.id);
+    addF("charset", "utf-8");
+    addF("no_note", "1");
 
-    var order = saveOrderLocally();
+    for (var j = 0; j < cart.length; j++) {
+      var n = j + 1;
+      addF("item_name_" + n, cart[j].name || "PhoenixDrop Item");
+      addF("amount_" + n, (parseFloat(cart[j].price) || 0).toFixed(2));
+      addF("quantity_" + n, String(parseInt(cart[j].qty, 10) || 1));
+    }
 
-    localStorage.removeItem('pd_cart');
-
-    var paypalUrl = buildPayPalUrl();
-
-    setTimeout(function() {
-        window.location.href = paypalUrl;
-    }, 800);
-}
-
-renderOrderSummary();
+    document.body.appendChild(form);
+    form.submit();
+    /* This POSTs to paypal.com — GitHub Pages is never hit. */
+  };
+})();
 </script>
-
 </body>
 </html>
