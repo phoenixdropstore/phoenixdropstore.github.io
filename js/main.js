@@ -141,7 +141,7 @@ function checkout(){
   if(!cart.length)return;
   var f=document.createElement("form");
   f.method="POST";
-  f.action="https://www.paypal.com/cgi-bin/webscr";
+  f.action="checkout.html";
   f.target="_blank";
   function addField(n,v){var inp=document.createElement("input");inp.type="hidden";inp.name=n;inp.value=v;f.appendChild(inp);}
   addField("cmd","_cart");

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - PhoenixDrop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f9fafb;
+            color: #111827;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .thank-you-card {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+            padding: 48px 40px;
+            max-width: 520px;
+        }
+        .check-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #10b981;
+            color: white;
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+        h1 {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+        p {
+            color: #6b7280;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        .order-id {
+            font-family: monospace;
+            background: #f9fafb;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin: 16px 0;
+            display: inline-block;
+        }
+        a {
+            color: #7c3aed;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover { text-decoration: underline; }
+        .back-btn {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 12px 32px;
+            background: #7c3aed;
+            color: white;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .back-btn:hover {
+            background: #6d28d9;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-card">
+        <div class="check-icon">&#10003;</div>
+        <h1>Thank You for Your Order!</h1>
+        <p>Your payment is being processed through PayPal.</p>
+        <p>You'll receive a confirmation email shortly.</p>
+        <div class="order-id" id="orderId">Loading order ID...</div>
+        <p>Questions? Email us at <a href="mailto:phoenixdrop.support@gmail.com">phoenixdrop.support@gmail.com</a></p>
+        <a href="index.html" class="back-btn">Continue Shopping</a>
+    </div>
+    <script>
+        var orders = [];
+        try {
+            var raw = localStorage.getItem('pd_orders');
+            if (raw) orders = JSON.parse(raw);
+        } catch(e) {}
+        var el = document.getElementById('orderId');
+        if (orders.length > 0) {
+            el.textContent = 'Order: ' + orders[orders.length - 1].id;
+        } else {
+            el.textContent = '';
+        }
+    </script>
+</body>
+</html>
