@@ -653,59 +653,52 @@ function saveOrderLocally() {
 }
 
 function sendOrderEmail(order) {
-    var data = {
-        email: order.customer.email,
-        name: order.customer.name,
-        phone: order.customer.phone,
-        address: order.customer.address1
-            + (order.customer.address2 ? ', ' + order.customer.address2 : '')
-            + ', ' + order.customer.city
-            + ', ' + order.customer.state
-            + ' ' + order.customer.zip
-            + ', ' + order.customer.country,
-        order_id: order.id,
-        items: buildOrderSummaryText(),
-        total: '$' + order.total.toFixed(2),
-        notes: order.notes || 'None',
-        _subject: 'New PhoenixDrop Order: ' + order.id + ' ($' + order.total.toFixed(2) + ')',
-        _captcha: 'false',
-        _template: 'table'
-    };
+    try {
+        var iframe = document.createElement('iframe');
+        iframe.name = 'pd_email_frame';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
 
-    var formData = new FormData();
-    var keys = Object.keys(data);
-    for (var i = 0; i < keys.length; i++) {
-        formData.append(keys[i], data[keys[i]]);
+        var form = document.createElement('form');
+        form.method = 'POST';
+        form.action = 'https://formsubmit.co/' + SUPPORT_EMAIL;
+        form.target = 'pd_email_frame';
+
+        var fields = {
+            'name': order.customer.name,
+            'email': order.customer.email,
+            'phone': order.customer.phone || 'N/A',
+            'address': order.customer.address1
+                + (order.customer.address2 ? ', ' + order.customer.address2 : '')
+                + ', ' + order.customer.city
+                + ', ' + order.customer.state
+                + ' ' + order.customer.zip
+                + ', ' + order.customer.country,
+            'order_id': order.id,
+            'items': buildOrderSummaryText(),
+            'total': '$' + order.total.toFixed(2),
+            'notes': order.notes || 'None',
+            '_subject': 'New PhoenixDrop Order: ' + order.id,
+            '_captcha': 'false',
+            '_template': 'table',
+            '_next': 'https://phoenixdropstore.github.io/thank-you.html'
+        };
+
+        var keys = Object.keys(fields);
+        for (var i = 0; i < keys.length; i++) {
+            var input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = keys[i];
+            input.value = fields[keys[i]];
+            form.appendChild(input);
+        }
+
+        document.body.appendChild(form);
+        form.submit();
+    } catch(e) {
+        /* email failed silently — order still saved locally */
     }
-
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://formsubmit.co/ajax/' + SUPPORT_EMAIL, true);
-    xhr.setRequestHeader('Accept', 'application/json');
-    xhr.send(formData);
 }
-
-function handleCheckout() {
-    if (!validateForm()) {
-        return;
-    }
-
-    var btn = document.getElementById('payButton');
-    btn.className = 'pay-button loading';
-    btn.disabled = true;
-
-    var order = saveOrderLocally();
-
-    sendOrderEmail(order);
-
-    localStorage.removeItem('pd_cart');
-
-    var paypalUrl = buildPayPalUrl();
-
-    setTimeout(function() {
-        window.location.href = paypalUrl;
-    }, 800);
-}
-
 renderOrderSummary();
 </script>
 
