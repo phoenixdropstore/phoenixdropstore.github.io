@@ -1,5 +1,5 @@
 /*
- * PhoenixDrop Smart Assistant v1.0
+ * PhoenixDrop Smart Assistant v1.1
  * Rule-based chatbot with context tracking and escalation.
  * var/function only. No const/let/arrow/template literals.
  */
@@ -244,7 +244,6 @@
                     var idx = lower.indexOf(pattern);
                     if (idx > -1) {
                         var score2 = pattern.length;
-                        /* Bonus for exact word boundary matches */
                         var before = idx > 0 ? lower.charAt(idx - 1) : " ";
                         var after = idx + pattern.length < lower.length ? lower.charAt(idx + pattern.length) : " ";
                         if (before === " " || before === "") score2 += 2;
@@ -279,7 +278,6 @@
         if (!container) return;
         var div = document.createElement("div");
         div.className = "pd-msg " + (isBot ? "pd-msg-bot" : "pd-msg-user");
-        /* Support newlines */
         div.innerHTML = text.replace(/\n/g, "<br>");
         container.appendChild(div);
         container.scrollTop = container.scrollHeight;
@@ -297,7 +295,6 @@
             btn.setAttribute("data-reply", replies[i]);
             btn.onclick = function() {
                 var text = this.getAttribute("data-reply");
-                /* Remove all quick reply buttons */
                 var allQR = document.querySelectorAll(".pd-quick-replies");
                 for (var q = 0; q < allQR.length; q++) {
                     allQR[q].remove();
@@ -346,7 +343,6 @@
                 reply = intent.response();
                 quickReplies = intent.quickReplies || null;
 
-                /* If response is null, it means the handler did something (like show form) */
                 if (reply === null) return;
             } else {
                 reply = getFallbackResponse();
@@ -411,13 +407,11 @@
             if (form) {
                 form.style.display = "flex";
                 document.getElementById("pd-msg-form-success").style.display = "none";
-                /* Reset form */
                 var fields = ["pd-msg-name", "pd-msg-email", "pd-msg-topic", "pd-msg-order-id", "pd-msg-body"];
                 for (var i = 0; i < fields.length; i++) {
                     var el = document.getElementById(fields[i]);
                     if (el) el.value = "";
                 }
-                /* Show form fields, hide success */
                 var formFields = form.querySelectorAll("input, textarea, select, h4, p");
                 for (var j = 0; j < formFields.length; j++) {
                     formFields[j].style.display = "";
@@ -439,15 +433,13 @@
                 return;
             }
 
-            /* Validate email */
             if (email.indexOf("@") === -1 || email.indexOf(".") === -1) {
                 alert("Please enter a valid email address.");
                 return;
             }
 
-            /* Send via Formspree (free, reliable) */
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "https://formspree.io/f/xrerykew", true);
+            xhr.open("POST", "https://formspree.io/f/xpwdgvek", true);
             xhr.setRequestHeader("Content-Type", "application/json");
             xhr.setRequestHeader("Accept", "application/json");
 
@@ -463,7 +455,6 @@
 
             xhr.onload = function() {
                 if (xhr.status >= 200 && xhr.status < 300) {
-                    /* Show success */
                     var form = document.getElementById("pd-msg-form");
                     var formFields = form.querySelectorAll("input, textarea, select, h4, p");
                     for (var j = 0; j < formFields.length; j++) {
@@ -473,7 +464,6 @@
                     form.querySelector(".pd-back-to-chat").style.display = "none";
                     document.getElementById("pd-msg-form-success").style.display = "block";
 
-                    /* Also save locally */
                     try {
                         var msgs = JSON.parse(localStorage.getItem("pd_messages") || "[]");
                         msgs.push({
