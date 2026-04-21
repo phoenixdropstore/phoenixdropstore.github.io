@@ -139,31 +139,10 @@ function qtyChange(i,d){
 
 function checkout(){
   if(!cart.length)return;
-  var f=document.createElement("form");
-  f.method="POST";
-  f.action="https://www.paypal.com/cgi-bin/webscr";
-  f.target="_blank";
-  function addField(n,v){var inp=document.createElement("input");inp.type="hidden";inp.name=n;inp.value=v;f.appendChild(inp);}
-  addField("cmd","_cart");
-  addField("upload","1");
-  addField("business",PAYPAL);
-  addField("currency_code","USD");
-  addField("return",location.href);
-  addField("cancel_return",location.href);
-  for(var i=0;i<cart.length;i++){
-    var n=i+1;
-    addField("item_name_"+n,cart[i].name);
-    addField("amount_"+n,cart[i].price.toFixed(2));
-    addField("quantity_"+n,cart[i].qty);
-    addField("shipping_"+n,"0.00");
-  }
-  document.body.appendChild(f);
-  f.submit();
-  document.body.removeChild(f);
-  cart=[];saveCart();updateBadge();renderCart();closeCart();
-  showToast("Redirecting to checkout...");
+  saveCart();
+  closeCart();
+  window.location.href="checkout.html";
 }
-
 var modalOverlay=QS(".modal-overlay");
 
 function openProduct(pid){
