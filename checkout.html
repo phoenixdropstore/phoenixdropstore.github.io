@@ -12,8 +12,6 @@ body{font-family:'Inter',sans-serif;background:#f9fafb;color:#111827;
   min-height:100vh;display:flex;flex-direction:column}
 a{color:#7c3aed;text-decoration:none}
 a:hover{color:#6d28d9;text-decoration:underline}
-
-/* ── Header ─────────────────────────────── */
 .ck-header{background:#fff;border-bottom:1px solid #e5e7eb;
   padding:16px 24px;display:flex;align-items:center;
   justify-content:space-between}
@@ -22,21 +20,15 @@ a:hover{color:#6d28d9;text-decoration:underline}
 .ck-logo span{color:#7c3aed}
 .ck-back{font-size:14px;color:#6b7280}
 .ck-back:hover{color:#7c3aed}
-
-/* ── Layout ─────────────────────────────── */
 .ck-wrap{max-width:960px;margin:32px auto;padding:0 20px;width:100%;
   display:grid;grid-template-columns:1fr 380px;gap:32px;flex:1}
 @media(max-width:768px){
   .ck-wrap{grid-template-columns:1fr;gap:24px}
 }
-
-/* ── Cards ──────────────────────────────── */
 .ck-card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;
   padding:28px;box-shadow:0 1px 3px rgba(124,58,237,.06)}
 .ck-card h2{font-family:'Instrument Sans',sans-serif;font-size:20px;
   font-weight:700;margin-bottom:20px;color:#111827}
-
-/* ── Order summary ──────────────────────── */
 .ck-items{list-style:none}
 .ck-item{display:flex;justify-content:space-between;align-items:center;
   padding:12px 0;border-bottom:1px solid #f3f4f6}
@@ -53,8 +45,6 @@ a:hover{color:#6d28d9;text-decoration:underline}
 .ck-total{display:flex;justify-content:space-between;padding:12px 0;
   font-size:18px;font-weight:700;color:#111827}
 .ck-empty{text-align:center;padding:40px 0;color:#6b7280;font-size:15px}
-
-/* ── Payment card ───────────────────────── */
 .ck-email-label{display:block;font-size:13px;font-weight:500;
   color:#374151;margin-bottom:6px}
 .ck-email-input{width:100%;padding:10px 14px;border:1px solid #e5e7eb;
@@ -73,24 +63,27 @@ a:hover{color:#6d28d9;text-decoration:underline}
   gap:6px;margin-top:14px;font-size:12px;color:#9ca3af}
 .ck-paypal-mark{display:flex;align-items:center;justify-content:center;
   margin-top:12px;gap:8px;font-size:12px;color:#6b7280}
-
-/* ── Footer ─────────────────────────────── */
+.ck-test-banner{background:#f59e0b;color:#111827;text-align:center;
+  padding:10px;font-size:13px;font-weight:600}
 .ck-footer{text-align:center;padding:20px;font-size:12px;color:#9ca3af;
   border-top:1px solid #f3f4f6;margin-top:auto}
 </style>
 </head>
 <body>
 
-<!-- Header -->
+<!-- ══ CHANGE THIS TO false WHEN READY TO GO LIVE ══ -->
+<script>var TEST_MODE = false;</script>
+
+<div class="ck-test-banner" id="ck-test-banner" style="display:none;">
+  &#9888; TEST MODE — No real payment will be made
+</div>
+
 <div class="ck-header">
   <div class="ck-logo">Phoenix<span>Drop</span></div>
   <a href="index.html" class="ck-back">&larr; Back to store</a>
 </div>
 
-<!-- Main -->
 <div class="ck-wrap">
-
-  <!-- Left: Order Summary -->
   <div class="ck-card">
     <h2>Order Summary</h2>
     <ul class="ck-items" id="ck-items"></ul>
@@ -101,7 +94,6 @@ a:hover{color:#6d28d9;text-decoration:underline}
     <div class="ck-total"><span>Total</span><span id="ck-total">\$0.00</span></div>
   </div>
 
-  <!-- Right: Payment -->
   <div class="ck-card">
     <h2>Payment</h2>
     <label class="ck-email-label" for="ck-email">Email (for order updates)</label>
@@ -109,31 +101,32 @@ a:hover{color:#6d28d9;text-decoration:underline}
            placeholder="you@email.com">
     <div class="ck-email-hint">Optional &mdash; PayPal will also send a receipt.</div>
 
-    <button type="button" class="ck-pay-btn" id="ck-pay-btn"
-            onclick="handleCheckout()">
+    <button type="button" class="ck-pay-btn" id="ck-pay-btn">
       Pay with PayPal
     </button>
 
-    <div class="ck-secure">
-      &#128274; Secure checkout via PayPal
-    </div>
-    <div class="ck-paypal-mark">
-      Powered by <strong>PayPal</strong>
-    </div>
+    <div class="ck-secure">&#128274; Secure checkout via PayPal</div>
+    <div class="ck-paypal-mark">Powered by <strong>PayPal</strong></div>
   </div>
-
 </div>
 
 <div class="ck-footer">&copy; 2025 PhoenixDrop. All rights reserved.</div>
 
-<!-- ─── JS: reads cart, builds PayPal form, POSTs to paypal.com ─── -->
 <script>
 (function () {
   var PAYPAL = "modernmonkreset@gmail.com";
   var RETURN_URL = "https://phoenixdropstore.github.io/thank-you.html";
   var CANCEL_URL = "https://phoenixdropstore.github.io";
 
-  /* ── Load cart ───────────────────────── */
+  /* Show test banner if TEST_MODE is on */
+  if (typeof TEST_MODE !== "undefined" && TEST_MODE === true) {
+    var banner = document.getElementById("ck-test-banner");
+    if (banner) { banner.style.display = "block"; }
+    var btn = document.getElementById("ck-pay-btn");
+    if (btn) { btn.textContent = "Test Purchase (no real charge)"; }
+  }
+
+  /* Load cart */
   var cart = [];
   try { cart = JSON.parse(localStorage.getItem("pd_cart") || "[]"); } catch (e) { cart = []; }
 
@@ -148,7 +141,7 @@ a:hover{color:#6d28d9;text-decoration:underline}
     return;
   }
 
-  /* ── Render items ────────────────────── */
+  /* Render items */
   var subtotal = 0;
   var html = "";
   for (var i = 0; i < cart.length; i++) {
@@ -176,14 +169,13 @@ a:hover{color:#6d28d9;text-decoration:underline}
   subtotalEl.textContent = "$" + subtotal.toFixed(2);
   totalEl.textContent = "$" + subtotal.toFixed(2);
 
-  /* ── Checkout handler ────────────────── */
-  window.handleCheckout = function () {
+  /* Checkout handler — attached via addEventListener, not onclick */
+  payBtn.addEventListener("click", function () {
     if (!cart || cart.length === 0) { alert("Cart is empty."); return; }
 
     payBtn.disabled = true;
-    payBtn.textContent = "Redirecting to PayPal\u2026";
 
-    /* Save order locally BEFORE redirect */
+    /* Save order locally */
     var order = {
       id: "PD-" + Date.now(),
       items: cart,
@@ -197,7 +189,24 @@ a:hover{color:#6d28d9;text-decoration:underline}
     orders.push(order);
     localStorage.setItem("pd_orders", JSON.stringify(orders));
 
-    /* Build a hidden form that POSTs to paypal.com (NOT our domain) */
+    /* ══ TEST MODE: skip PayPal, go straight to thank-you ══ */
+    if (typeof TEST_MODE !== "undefined" && TEST_MODE === true) {
+      alert(
+        "TEST ORDER SUCCESSFUL!\n\n"
+        + "Order: " + order.id + "\n"
+        + "Items: " + order.items.length + "\n"
+        + "Total: $" + subtotal.toFixed(2) + "\n"
+        + "Email: " + (order.email || "(none)") + "\n\n"
+        + "No money was charged.\n"
+        + "Redirecting to thank-you page..."
+      );
+      window.location.href = "thank-you.html";
+      return;
+    }
+
+    /* ══ LIVE MODE: build form and POST to paypal.com ══ */
+    payBtn.textContent = "Redirecting to PayPal\u2026";
+
     var form = document.createElement("form");
     form.method = "POST";
     form.action = "https://www.paypal.com/cgi-bin/webscr";
@@ -227,8 +236,7 @@ a:hover{color:#6d28d9;text-decoration:underline}
 
     document.body.appendChild(form);
     form.submit();
-    /* This POSTs to paypal.com — GitHub Pages is never hit. */
-  };
+  });
 })();
 </script>
 </body>
