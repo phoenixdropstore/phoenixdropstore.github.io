@@ -158,7 +158,7 @@ a:hover{color:#6d28d9;text-decoration:underline}
     var line = price * qty;
     subtotal += line;
 
-    var imgSrc = item.image || item.image_url || "";
+    var imgSrc = item.img || item.image || item.image_url || "";
     var imgTag = imgSrc
       ? '<img class="ck-item-img" src="' + imgSrc + '" alt="">'
       : '<div class="ck-item-img"></div>';
