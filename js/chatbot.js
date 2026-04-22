@@ -13,7 +13,7 @@
             time: "7-15 business days",
             cost: "FREE on all orders",
             tracking: "You'll receive a tracking number via email within 2-3 business days after your order ships.",
-            countries: "We currently ship within the United States.",
+            countries: "We ship worldwide! US orders: 7-15 business days. International: 15-30 business days.",
             detail: "All orders include free standard shipping. Most items ship within 1-3 business days and arrive in 7-15 business days. You'll get a tracking email once your order is on its way."
         },
         returns: {
@@ -64,7 +64,7 @@
             name: "shipping_international",
             patterns: ["international", "outside us", "other countries", "worldwide", "canada", "uk", "europe", "australia", "ship to"],
             response: function() {
-                return "We currently ship within the United States only. We're working on expanding to more countries soon! Follow us on TikTok or Instagram for updates.";
+                return "We ship worldwide! US orders arrive in 7-15 business days. International orders take 15-30 business days. Free shipping on all orders, no matter where you are.";
             }
         },
         {
