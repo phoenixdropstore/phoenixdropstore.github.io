@@ -62,7 +62,9 @@ body{font-family:'Inter',sans-serif;background:#f9fafb;color:#111827;
 <!-- PHOENIX_CHAT_START -->
 
 <style>
-/* PhoenixDrop Chat Mobile Fix v7.0 */
+/* PhoenixDrop Chat Mobile Fix v7.1 */
+
+/* Force trigger to be a visible bottom-right pill on mobile */
 @media screen and (max-width: 640px) {
   #pd-chat-trigger,
   .pd-chat-trigger,
@@ -99,7 +101,8 @@ body{font-family:'Inter',sans-serif;background:#f9fafb;color:#111827;
     border: none !important;
   }
 }
-/* Ensure chat window is usable on mobile */
+
+/* Chat window: full-width bottom sheet on mobile */
 @media screen and (max-width: 640px) {
   #pd-chat-window,
   .pd-chat-window {
@@ -115,8 +118,75 @@ body{font-family:'Inter',sans-serif;background:#f9fafb;color:#111827;
     border-radius: 16px 16px 0 0 !important;
     z-index: 100000 !important;
   }
+
+  /* Close button in chat header - always visible and tappable */
+  #pd-chat-window .pd-chat-close,
+  #pd-chat-window [onclick*="close"],
+  #pd-chat-window [onclick*="toggle"],
+  .pd-chat-window .pd-chat-close,
+  .pd-chat-window [onclick*="close"],
+  .pd-chat-window [onclick*="toggle"],
+  .pd-chat-header button,
+  .pd-chat-header .close,
+  .pd-chat-header [class*="close"],
+  #pd-chat-window button[style*="close"],
+  #pd-chat-window .pd-chat-head button,
+  .pd-chat-head button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 20px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    background: rgba(255,255,255,0.2) !important;
+    border: none !important;
+    border-radius: 50% !important;
+    color: white !important;
+    position: relative !important;
+    z-index: 100001 !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
 }
 </style>
+
+<script>
+/* Mobile close fallback: if no close button found, inject one */
+(function(){
+  function ensureMobileClose(){
+    var win = document.getElementById('pd-chat-window');
+    if(!win) return;
+    var head = win.querySelector('.pd-chat-head') || win.querySelector('.pd-chat-header') || win.firstElementChild;
+    if(!head) return;
+    var existing = head.querySelector('.pd-mob-close');
+    if(existing) return;
+    var btn = document.createElement('button');
+    btn.className = 'pd-mob-close';
+    btn.innerHTML = '&times;';
+    btn.setAttribute('aria-label','Close chat');
+    btn.style.cssText = 'position:absolute;top:10px;right:12px;width:36px;height:36px;min-width:36px;min-height:36px;border-radius:50%;background:rgba(255,255,255,0.2);border:none;color:white;font-size:22px;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:100002;-webkit-tap-highlight-color:transparent;';
+    btn.onclick = function(){
+      if(typeof PD_Chat !== 'undefined' && PD_Chat.toggle) { PD_Chat.toggle(); }
+      else if(typeof PD_Chat !== 'undefined' && PD_Chat.close) { PD_Chat.close(); }
+      else { win.style.display = 'none'; }
+    };
+    head.style.position = 'relative';
+    head.appendChild(btn);
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(ensureMobileClose, 500); });
+  } else {
+    setTimeout(ensureMobileClose, 500);
+  }
+  var obs = new MutationObserver(function(){ setTimeout(ensureMobileClose, 200); });
+  obs.observe(document.body, {childList:true, subtree:true});
+})();
+</script>
 
 <!-- PhoenixDrop Smart Assistant v1.1 -->
 <style>
