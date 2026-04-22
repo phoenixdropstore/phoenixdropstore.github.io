@@ -59,7 +59,65 @@ body{font-family:'Inter',sans-serif;background:#f9fafb;color:#111827;
 })();
 </script>
 
-<!-- PD-CHAT-START -->
+<!-- PHOENIX_CHAT_START -->
+
+<style>
+/* PhoenixDrop Chat Mobile Fix v7.0 */
+@media screen and (max-width: 640px) {
+  #pd-chat-trigger,
+  .pd-chat-trigger,
+  [onclick*="PD_Chat.toggle"],
+  [onclick*="PD_Chat.open"] {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 16px !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    writing-mode: horizontal-tb !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 99999 !important;
+    width: auto !important;
+    height: auto !important;
+    min-width: 56px !important;
+    min-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px 18px !important;
+    border-radius: 50px !important;
+    background: #7c3aed !important;
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    font-family: 'Inter', sans-serif !important;
+    box-shadow: 0 4px 15px rgba(124,58,237,0.35) !important;
+    cursor: pointer !important;
+    letter-spacing: 0 !important;
+    text-orientation: mixed !important;
+    border: none !important;
+  }
+}
+/* Ensure chat window is usable on mobile */
+@media screen and (max-width: 640px) {
+  #pd-chat-window,
+  .pd-chat-window {
+    position: fixed !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    top: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 85vh !important;
+    max-height: 85vh !important;
+    border-radius: 16px 16px 0 0 !important;
+    z-index: 100000 !important;
+  }
+}
+</style>
+
 <!-- PhoenixDrop Smart Assistant v1.1 -->
 <style>
 /* ===== LAUNCHER: subtle on desktop, slim tab on mobile ===== */
@@ -451,6 +509,6 @@ body{font-family:'Inter',sans-serif;background:#f9fafb;color:#111827;
     </div>
 </div>
 <script src="js/chatbot.js"></script>
-<!-- PD-CHAT-END -->
+<!-- PHOENIX_CHAT_END -->
 </body>
 </html>

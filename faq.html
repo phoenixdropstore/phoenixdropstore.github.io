@@ -98,12 +98,125 @@ footer{text-align:center;padding:40px 20px;border-top:1px solid var(--border);ma
     <a href="mailto:phoenixdrop.support@gmail.com">phoenixdrop.support@gmail.com</a>
   </div>
 </div>
-<footer>
-  <div class="f-brand">Phoenix<em>Drop</em></div>
-  <p class="f-copy">&copy; 2025 PhoenixDrop. All rights reserved.</p>
-</footer>
 
-<!-- PD-CHAT-START -->
+
+
+<!-- PHOENIX_FOOTER_START -->
+
+<style>
+/* PhoenixDrop Footer v7.0 */
+.pd-ft{background:#f9fafb;border-top:1px solid #e5e7eb;padding:0;margin-top:60px;font-family:'Inter',sans-serif}
+.pd-ft-inner{max-width:1200px;margin:0 auto;padding:48px 24px 32px;display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap}
+.pd-ft-brand{flex:1;min-width:220px;max-width:340px}
+.pd-ft-logo{font-family:'Instrument Sans',sans-serif;font-size:24px;font-weight:700;color:#111827;margin:0 0 10px}
+.pd-ft-logo span{color:#7c3aed}
+.pd-ft-brand p{color:#6b7280;font-size:14px;line-height:1.6;margin:0}
+.pd-ft-cols{display:flex;gap:48px;flex-wrap:wrap}
+.pd-ft-col h4{font-family:'Instrument Sans',sans-serif;font-size:13px;font-weight:700;color:#111827;text-transform:uppercase;letter-spacing:0.05em;margin:0 0 14px}
+.pd-ft-col a{display:block;color:#6b7280;font-size:14px;text-decoration:none;margin:0 0 10px;transition:color 0.15s}
+.pd-ft-col a:hover{color:#7c3aed}
+.pd-ft-bottom{max-width:1200px;margin:0 auto;padding:20px 24px;border-top:1px solid #e5e7eb}
+.pd-ft-bottom span{color:#9ca3af;font-size:13px}
+@media(max-width:768px){
+.pd-ft-inner{flex-direction:column;align-items:center;text-align:center;padding:40px 20px 24px;gap:32px}
+.pd-ft-brand{max-width:100%;min-width:0}
+.pd-ft-cols{justify-content:center;gap:36px}
+.pd-ft-col{min-width:100px}
+.pd-ft-bottom{text-align:center;padding:16px 20px}
+}
+</style>
+
+<footer class="pd-ft">
+<div class="pd-ft-inner">
+<div class="pd-ft-brand">
+<div class="pd-ft-logo">Phoenix<span>Drop</span></div>
+<p>New drops every week.<br>Quality gadgets, free shipping.</p>
+</div>
+<div class="pd-ft-cols">
+<div class="pd-ft-col">
+<h4>Shop</h4>
+<a href="index.html">All Products</a>
+</div>
+<div class="pd-ft-col">
+<h4>Info</h4>
+<a href="shipping.html">Shipping Policy</a>
+<a href="about.html">About Us</a>
+<a href="faq.html">FAQ</a>
+</div>
+<div class="pd-ft-col">
+<h4>Connect</h4>
+<a href="https://www.tiktok.com/@phoenixdropstore" target="_blank" rel="noopener">TikTok</a>
+<a href="https://www.instagram.com/phoenixdropstore" target="_blank" rel="noopener">Instagram</a>
+<a href="mailto:phoenixdrop.support@gmail.com">Contact</a>
+</div>
+</div>
+</div>
+<div class="pd-ft-bottom">
+<span>&copy; 2025 PhoenixDrop. All rights reserved.</span>
+</div>
+</footer>
+<!-- PHOENIX_FOOTER_END -->
+
+
+<!-- PHOENIX_CHAT_START -->
+
+<style>
+/* PhoenixDrop Chat Mobile Fix v7.0 */
+@media screen and (max-width: 640px) {
+  #pd-chat-trigger,
+  .pd-chat-trigger,
+  [onclick*="PD_Chat.toggle"],
+  [onclick*="PD_Chat.open"] {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 16px !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    writing-mode: horizontal-tb !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 99999 !important;
+    width: auto !important;
+    height: auto !important;
+    min-width: 56px !important;
+    min-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px 18px !important;
+    border-radius: 50px !important;
+    background: #7c3aed !important;
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    font-family: 'Inter', sans-serif !important;
+    box-shadow: 0 4px 15px rgba(124,58,237,0.35) !important;
+    cursor: pointer !important;
+    letter-spacing: 0 !important;
+    text-orientation: mixed !important;
+    border: none !important;
+  }
+}
+/* Ensure chat window is usable on mobile */
+@media screen and (max-width: 640px) {
+  #pd-chat-window,
+  .pd-chat-window {
+    position: fixed !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    top: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 85vh !important;
+    max-height: 85vh !important;
+    border-radius: 16px 16px 0 0 !important;
+    z-index: 100000 !important;
+  }
+}
+</style>
+
 <!-- PhoenixDrop Smart Assistant v1.1 -->
 <style>
 /* ===== LAUNCHER: subtle on desktop, slim tab on mobile ===== */
@@ -495,6 +608,6 @@ footer{text-align:center;padding:40px 20px;border-top:1px solid var(--border);ma
     </div>
 </div>
 <script src="js/chatbot.js"></script>
-<!-- PD-CHAT-END -->
+<!-- PHOENIX_CHAT_END -->
 </body>
 </html>
