@@ -8,9 +8,11 @@
   var observer = new MutationObserver(function () {
     var modal = document.querySelector(".modal");
     if (!modal) return;
-    var reviewSection = modal.querySelector(".review-section");
-    if (!reviewSection) return;
+    /* Already injected? Skip */
     if (modal.querySelector(".review-form-wrap")) return;
+    /* Find anchor: review-section if it exists, otherwise modal-trust */
+    var anchor = modal.querySelector(".review-section") || modal.querySelector(".modal-trust");
+    if (!anchor) return;
 
     var pid = "";
     var pname = "";
@@ -46,12 +48,13 @@
       '<div class="review-thanks">Thank you for your review! \u2705</div>' +
       "</form>";
 
-    reviewSection.appendChild(wrap);
+    /* Insert after review-section if exists, otherwise after modal-trust */
+    anchor.parentNode.insertBefore(wrap, anchor.nextSibling);
   });
 
   observer.observe(document.body, { childList: true, subtree: true });
 
-  /* Star picker - event delegation on body */
+  /* Star picker - event delegation */
   document.addEventListener("click", function (e) {
     var star = e.target.closest(".star-pick");
     if (!star) return;
@@ -67,7 +70,7 @@
     if (valInput) valInput.value = n;
   });
 
-  /* Star hover effect */
+  /* Star hover */
   document.addEventListener("mouseover", function (e) {
     var star = e.target.closest(".star-pick");
     if (!star) return;
