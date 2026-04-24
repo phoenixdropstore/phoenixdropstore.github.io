@@ -1,7 +1,6 @@
 (function() {
   'use strict';
 
-  /* ---- STEP 1: Patch products array immediately (sync, no fetch needed) ---- */
   function patchProductsArray() {
     if (typeof products === 'undefined') return;
     var cards = document.querySelectorAll('[data-pid]');
@@ -19,11 +18,24 @@
     }
   }
 
-  /* Run immediately - no async, no fetch, just sync DOM read */
   patchProductsArray();
 
-  /* ---- STEP 2: Fetch sale data for strikethrough display ---- */
   var globalSaleMap = {};
+  var cardPriceMap = {};
+
+  function buildCardPriceMap() {
+    var cards = document.querySelectorAll('[data-pid]');
+    cards.forEach(function(card) {
+      var img = card.querySelector('.card-img img');
+      if (!img) return;
+      var src = img.getAttribute('src') || '';
+      var dp = card.getAttribute('data-price');
+      var pid = card.getAttribute('data-pid');
+      if (src && dp) cardPriceMap[src] = { price: parseFloat(dp), pid: pid };
+    });
+  }
+
+  buildCardPriceMap();
 
   fetch('sale_prices.json')
     .then(function(r) { return r.ok ? r.json() : {}; })
@@ -34,13 +46,11 @@
       applySaleTagsToCards();
     });
 
-  /* ---- STEP 3: MutationObserver for ALL DOM changes ---- */
   new MutationObserver(function() {
     applySaleTagsToCards();
     fixModal();
   }).observe(document.body, { childList: true, subtree: true });
 
-  /* ---- Card sale tags (strikethrough on browse grid) ---- */
   function applySaleTagsToCards() {
     if (!globalSaleMap || Object.keys(globalSaleMap).length === 0) return;
     var cards = document.querySelectorAll('[data-pid]');
@@ -64,40 +74,28 @@
     });
   }
 
-  /* ---- Modal fix: correct price + sale strikethrough ---- */
   function fixModal() {
     var modal = document.querySelector('.modal');
     if (!modal) return;
-
     var modalPrice = modal.querySelector('.modal-price');
     if (!modalPrice) return;
-
-    /* Check if we already fixed THIS specific modal content */
     var modalImg = modal.querySelector('.modal-img img');
     if (!modalImg) return;
     var src = modalImg.getAttribute('src') || '';
     if (!src) return;
 
-    var fixedKey = modal.getAttribute('data-fixed-src');
-    if (fixedKey === src) return;
+    var cardData = cardPriceMap[src];
+    if (!cardData) return;
+    var correctPrice = cardData.price;
+    var pid = cardData.pid;
 
-    /* Find correct price from data-price on the matching card */
-    var correctPrice = null;
-    var matchCard = null;
-    var cards = document.querySelectorAll('[data-pid]');
-    cards.forEach(function(card) {
-      var cImg = card.querySelector('.card-img img');
-      if (cImg && cImg.getAttribute('src') === src) {
-        correctPrice = parseFloat(card.getAttribute('data-price'));
-        matchCard = card;
-      }
-    });
-
-    if (!correctPrice) return;
-
+    var currentText = modalPrice.textContent || '';
+    var currentNum = parseFloat(currentText.replace(/[^0-9.]/g, ''));
     var compare = findByImage(globalSaleMap, src);
 
-    /* Fix modal price display */
+    var alreadyFixed = (currentNum === correctPrice) && modalPrice.getAttribute('data-sale-done');
+    if (alreadyFixed) return;
+
     var priceHtml = '$' + correctPrice.toFixed(2);
     if (compare && compare > correctPrice) {
       var pct = Math.round(((compare - correctPrice) / compare) * 100);
@@ -105,8 +103,8 @@
       priceHtml += ' <span style="background:#ef4444;color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;margin-left:6px">' + pct + '% OFF</span>';
     }
     modalPrice.innerHTML = priceHtml;
+    modalPrice.setAttribute('data-sale-done', '1');
 
-    /* Fix Add to Cart button */
     var addBtn = modal.querySelector('.modal-add');
     if (addBtn) {
       var btnHtml = 'Add to Cart \u2014 $' + correctPrice.toFixed(2);
@@ -115,18 +113,11 @@
       }
       addBtn.innerHTML = btnHtml;
 
-      /* Fix onclick to use correct price */
-      if (matchCard) {
-        var pid = matchCard.getAttribute('data-pid');
-        var cardName = modal.querySelector('.modal-name');
-        var name = cardName ? cardName.textContent.replace(/'/g, "\\'") : '';
-        var sImg = src.replace(/'/g, "\\'");
-        addBtn.setAttribute('onclick', "PD.addToCart('" + pid + "','" + name + "'," + correctPrice.toFixed(2) + ",'" + sImg + "');PD.closeProduct()");
-      }
+      var cardName = modal.querySelector('.modal-name');
+      var name = cardName ? cardName.textContent.replace(/'/g, "\\'") : '';
+      var sImg = src.replace(/'/g, "\\'");
+      addBtn.setAttribute('onclick', "PD.addToCart('" + pid + "','" + name + "'," + correctPrice.toFixed(2) + ",'" + sImg + "');PD.closeProduct()");
     }
-
-    /* Mark this modal as fixed for this specific product image */
-    modal.setAttribute('data-fixed-src', src);
   }
 
   function findByImage(map, imgSrc) {
