@@ -464,6 +464,29 @@ footer{border-top:1px solid var(--border-l);padding:36px 24px;text-align:center}
 }
 .btn-review-submit:hover{background:var(--purple);opacity:.9;box-shadow:var(--shadow-md)}
 .btn-review-submit:disabled{opacity:.5;cursor:default}
+.c-compare{
+  text-decoration:line-through;
+  color:var(--red);
+  font-size:13px;
+  font-weight:500;
+  margin-left:4px;
+}
+.c-off{
+  background:var(--red);
+  color:#fff;
+  font-size:10px;
+  font-weight:700;
+  padding:2px 6px;
+  border-radius:4px;
+  margin-left:4px;
+  vertical-align:middle;
+}
+.modal-price .c-compare{font-size:15px;margin-left:6px}
+.modal-price .c-off{font-size:11px;padding:2px 8px;margin-left:6px}
+.modal-add .c-compare{color:rgba(255,255,255,0.7);font-size:13px;margin-left:4px}
+.card-foot .c-compare{font-size:12px}
+.card-foot .c-off{font-size:9px;padding:1px 5px}
+
 .review-thanks{
   padding:16px;background:var(--green-l);border-radius:var(--r);
   text-align:center;font-size:.88rem;font-weight:600;color:#065f46;
