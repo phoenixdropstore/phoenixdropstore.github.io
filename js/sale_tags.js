@@ -6,8 +6,11 @@
     .then(function(saleMap) {
       if (!saleMap || Object.keys(saleMap).length === 0) return;
       applySaleTags(saleMap);
-      new MutationObserver(function() { applySaleTags(saleMap); })
-        .observe(document.body, { childList: true, subtree: true });
+      applyModalSale(saleMap);
+      new MutationObserver(function() {
+        applySaleTags(saleMap);
+        applyModalSale(saleMap);
+      }).observe(document.body, { childList: true, subtree: true });
     });
 
   function applySaleTags(saleMap) {
@@ -30,6 +33,43 @@
         ' <span style="background:#ef4444;color:#fff;font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;margin-left:4px">' + pct + '% OFF</span>';
       card.setAttribute('data-sale-done', '1');
     });
+  }
+
+  function applyModalSale(saleMap) {
+    var modal = document.querySelector('.modal');
+    if (!modal) return;
+    var modalImg = modal.querySelector('.modal-img img');
+    if (!modalImg) return;
+    var src = modalImg.getAttribute('src') || '';
+    var compare = findByImage(saleMap, src);
+    if (!compare) return;
+
+    /* --- Modal price row --- */
+    var modalPrice = modal.querySelector('.modal-price');
+    if (modalPrice && !modalPrice.getAttribute('data-sale-done')) {
+      var cur = parseFloat(modalPrice.textContent.replace('$', ''));
+      if (cur && compare > cur) {
+        var pct = Math.round(((compare - cur) / compare) * 100);
+        modalPrice.innerHTML =
+          '$' + cur.toFixed(2) +
+          ' <span style="text-decoration:line-through;color:#ef4444;font-size:15px;font-weight:500;margin-left:6px">$' + compare.toFixed(2) + '</span>' +
+          ' <span style="background:#ef4444;color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;margin-left:6px">' + pct + '% OFF</span>';
+        modalPrice.setAttribute('data-sale-done', '1');
+      }
+    }
+
+    /* --- Add to Cart button text --- */
+    var addBtn = modal.querySelector('.modal-add');
+    if (addBtn && !addBtn.getAttribute('data-sale-done')) {
+      var btnPrice = null;
+      var btnMatch = addBtn.textContent.match(/\$([0-9.]+)/);
+      if (btnMatch) btnPrice = parseFloat(btnMatch[1]);
+      if (btnPrice && compare > btnPrice) {
+        addBtn.innerHTML = 'Add to Cart \u2014 $' + btnPrice.toFixed(2) +
+          ' <span style="text-decoration:line-through;color:rgba(255,255,255,0.7);font-size:13px;margin-left:4px">$' + compare.toFixed(2) + '</span>';
+        addBtn.setAttribute('data-sale-done', '1');
+      }
+    }
   }
 
   function findByImage(map, imgSrc) {
