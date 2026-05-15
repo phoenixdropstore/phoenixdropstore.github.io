@@ -47,7 +47,7 @@
       </div>
       <div class="trust">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 009 9 9 9 0 000-18 9 9 0 00-9 9zM12 8v4l3 3"/></svg>
-        Updated May 2026
+        Updated April 2026
       </div>
     </div>
   </section>
@@ -81,14 +81,14 @@
       </div>
     </div>
     <div class="grid">
-    <div class="card" data-niche="kitchen_gadgets" data-name="fullstar the original pro chopper - vegetable chopper and spiralizer, food chopper with container, fruit slicer, kitc..." data-pid="c970de6a" data-price="24.99" data-sold="419" onclick="PD.openProduct('c970de6a')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="fullstar the original pro chopper - vegetable chopper and spiralizer, food chopper with container, fruit slicer, kitc..." data-pid="c970de6a" data-price="24.99" data-sold="341" onclick="PD.openProduct('c970de6a')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/81GZZyozv-L._AC_UL960_QL65_.jpg" alt="The Original Pro Chopper" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-best">Best Seller</span><span class="lbl lbl-hot">🔥 Hot</span><span class="lbl lbl-trend">🔥 Trending</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
           <span class="fomo-stock">Only 14 left</span>
-          <span class="fomo-sold">419+ sold</span>
+          <span class="fomo-sold">341+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -106,14 +106,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="desk_gadgets" data-name="odistar desktop vacuum cleaner, mini table dust sweeper energy saving,high endurance up to 90 mins,cordless&amp;amp;360º ..." data-pid="18c4ca9f" data-price="28.99" data-sold="287" onclick="PD.openProduct('18c4ca9f')">
+    <div class="card" data-niche="desk_gadgets" data-name="odistar desktop vacuum cleaner, mini table dust sweeper energy saving,high endurance up to 90 mins,cordless&amp;amp;360º ..." data-pid="18c4ca9f" data-price="28.99" data-sold="203" onclick="PD.openProduct('18c4ca9f')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/51bbbt-YaEL._AC_UL960_QL65_.jpg" alt="ODISTAR Desktop Vacuum Cleaner Mini Table dust" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-best">Best Seller</span><span class="lbl lbl-hot">🔥 Hot</span><span class="lbl lbl-trend">🔥 Trending</span></div>
         <span class="card-cat">Desk</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 6 left</span>
-          <span class="fomo-sold">287+ sold</span>
+          <span class="fomo-stock">Only 7 left</span>
+          <span class="fomo-sold">203+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -131,14 +131,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="alltop bench scraper &amp;amp; chopper for kitchen - ideal baking essential utensil,stainless steel pastry/dough/food cut..." data-pid="d00f4705" data-price="19.99" data-sold="68" onclick="PD.openProduct('d00f4705')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="alltop bench scraper &amp;amp; chopper for kitchen - ideal baking essential utensil,stainless steel pastry/dough/food cut..." data-pid="d00f4705" data-price="19.99" data-sold="287" onclick="PD.openProduct('d00f4705')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/51GRGFJDSkL._AC_UL960_QL65_.jpg" alt="Bench Scraper &amp; Chopper" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-best">Best Seller</span><span class="lbl lbl-hot">🔥 Hot</span><span class="lbl lbl-trend">🔥 Trending</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 8 left</span>
-          <span class="fomo-sold">68+ sold</span>
+          <span class="fomo-stock">Only 3 left</span>
+          <span class="fomo-sold">287+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -156,14 +156,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="awoke stove top shelf 30 inch - silicone material magnetic shelf for stove - 3 functional partitions kitchen spice ra..." data-pid="ec044265" data-price="28.99" data-sold="47" onclick="PD.openProduct('ec044265')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="awoke stove top shelf 30 inch - silicone material magnetic shelf for stove - 3 functional partitions kitchen spice ra..." data-pid="ec044265" data-price="28.99" data-sold="203" onclick="PD.openProduct('ec044265')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/71zx5Vy8u+L._AC_UL960_QL65_.jpg" alt="AWOKE Stove Top Shelf 30 Inch" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-best">Best Seller</span><span class="lbl lbl-hot">🔥 Hot</span><span class="lbl lbl-trend">🔥 Trending</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 7 left</span>
-          <span class="fomo-sold">47+ sold</span>
+          <span class="fomo-stock">Only 8 left</span>
+          <span class="fomo-sold">203+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -181,14 +181,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="desk_gadgets" data-name="sweetfull 6.5 inch usb small desk fan, 3 speeds quiet portable desktop table fan, 360° adjustment personal mini fan f..." data-pid="49be2e76" data-price="39.99" data-sold="203" onclick="PD.openProduct('49be2e76')">
+    <div class="card" data-niche="desk_gadgets" data-name="sweetfull 6.5 inch usb small desk fan, 3 speeds quiet portable desktop table fan, 360° adjustment personal mini fan f..." data-pid="49be2e76" data-price="39.99" data-sold="419" onclick="PD.openProduct('49be2e76')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/71s4bcH0C7L._AC_UL960_QL65_.jpg" alt="6.5 Inch USB Small Desk Fan 3 Speeds Quiet Portable" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-best">Best Seller</span><span class="lbl lbl-hot">🔥 Hot</span><span class="lbl lbl-trend">🔥 Trending</span></div>
         <span class="card-cat">Desk</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 12 left</span>
-          <span class="fomo-sold">203+ sold</span>
+          <span class="fomo-stock">Only 3 left</span>
+          <span class="fomo-sold">419+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -206,14 +206,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="mcgor 10inch under cabinet lighting, 2 pack rechargeable motion sensor light indoor, 5 levels dimmable magnetic close..." data-pid="ed672bfe" data-price="24.99" data-sold="156" onclick="PD.openProduct('ed672bfe')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="mcgor 10inch under cabinet lighting, 2 pack rechargeable motion sensor light indoor, 5 levels dimmable magnetic close..." data-pid="ed672bfe" data-price="24.99" data-sold="508" onclick="PD.openProduct('ed672bfe')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/61x62WLGvNL._AC_UL960_QL65_.jpg" alt="MCGOR 10inch Under Cabinet Lighting Rechargeable" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span><span class="lbl lbl-trend">🔥 Trending</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 7 left</span>
-          <span class="fomo-sold">156+ sold</span>
+          <span class="fomo-stock">Only 5 left</span>
+          <span class="fomo-sold">508+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -231,14 +231,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="ototo splatypus jar spatula for scooping and scraping - unique fun cooking kitchen gadgets for foodies - bpa-free &amp;am..." data-pid="e7027463" data-price="21.95" data-sold="203" onclick="PD.openProduct('e7027463')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="ototo splatypus jar spatula for scooping and scraping - unique fun cooking kitchen gadgets for foodies - bpa-free &amp;am..." data-pid="e7027463" data-price="21.95" data-sold="89" onclick="PD.openProduct('e7027463')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/61kSyC6HXDL._AC_UL960_QL65_.jpg" alt="OTOTO Splatypus Jar Spatula for Scooping and Scraping" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span><span class="lbl lbl-trend">🔥 Trending</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 14 left</span>
-          <span class="fomo-sold">203+ sold</span>
+          <span class="fomo-stock">Only 3 left</span>
+          <span class="fomo-sold">89+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -256,14 +256,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="astercook deep-carbonized bamboo cutting boards for kitchen with wood storage stand, reversible charcuterie &amp;amp; cho..." data-pid="3f8592bf" data-price="29.99" data-sold="341" onclick="PD.openProduct('3f8592bf')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="astercook deep-carbonized bamboo cutting boards for kitchen with wood storage stand, reversible charcuterie &amp;amp; cho..." data-pid="3f8592bf" data-price="29.99" data-sold="89" onclick="PD.openProduct('3f8592bf')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/91xky+JYmZL._AC_UL960_QL65_.jpg" alt="Astercook Deep-Carbonized Bamboo Cutting Boards" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span><span class="lbl lbl-trend">🔥 Trending</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 14 left</span>
-          <span class="fomo-sold">341+ sold</span>
+          <span class="fomo-stock">Only 5 left</span>
+          <span class="fomo-sold">89+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -281,14 +281,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="desk_gadgets" data-name="pd30w desk clamp power strip, desktop mount surge protector, fast charging station, 5ft extension cord desk edge moun..." data-pid="128c116c" data-price="24.99" data-sold="508" onclick="PD.openProduct('128c116c')">
+    <div class="card" data-niche="desk_gadgets" data-name="pd30w desk clamp power strip, desktop mount surge protector, fast charging station, 5ft extension cord desk edge moun..." data-pid="128c116c" data-price="24.99" data-sold="23" onclick="PD.openProduct('128c116c')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/51oCgzEjdrL._AC_UL960_QL65_.jpg" alt="PD30W Desk Clamp Power Strip Desktop Mount Surge" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Desk</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 7 left</span>
-          <span class="fomo-sold">508+ sold</span>
+          <span class="fomo-stock">Only 11 left</span>
+          <span class="fomo-sold">23+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -306,14 +306,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="desk_gadgets" data-name="cable management, 25&amp;#x27;&amp;#x27; cable management under desk no drill, metal cord organizer with clamp for standing d..." data-pid="d33193b4" data-price="24.99" data-sold="419" onclick="PD.openProduct('d33193b4')">
+    <div class="card" data-niche="desk_gadgets" data-name="cable management, 25&amp;#x27;&amp;#x27; cable management under desk no drill, metal cord organizer with clamp for standing d..." data-pid="d33193b4" data-price="24.99" data-sold="112" onclick="PD.openProduct('d33193b4')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/719HqEdBSvL._AC_UL960_QL65_.jpg" alt="Cable Management 25&#x27;&#x27; Under Desk No Drill" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Desk</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 3 left</span>
-          <span class="fomo-sold">419+ sold</span>
+          <span class="fomo-stock">Only 6 left</span>
+          <span class="fomo-sold">112+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -331,14 +331,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="aluminum alloy tomato &amp;amp; lemon slicer holder - manual fruit and onion cutter tool with handle, vegetable cutting t..." data-pid="16f3ce7a" data-price="26.99" data-sold="508" onclick="PD.openProduct('16f3ce7a')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="aluminum alloy tomato &amp;amp; lemon slicer holder - manual fruit and onion cutter tool with handle, vegetable cutting t..." data-pid="16f3ce7a" data-price="26.99" data-sold="47" onclick="PD.openProduct('16f3ce7a')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/51JuJvRk6DL._AC_UL960_QL65_.jpg" alt="Aluminum Alloy Tomato &amp; Lemon Slicer Holder" loading="lazy">
         <div class="card-labels"></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 5 left</span>
-          <span class="fomo-sold">508+ sold</span>
+          <span class="fomo-stock">Only 8 left</span>
+          <span class="fomo-sold">47+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -356,14 +356,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="desk_gadgets" data-name="vtopmart 25 pcs clear plastic drawer organizers set, 4-size versatile bathroom and vanity drawer organizer trays, sto..." data-pid="342180e1" data-price="24.99" data-sold="23" onclick="PD.openProduct('342180e1')">
+    <div class="card" data-niche="desk_gadgets" data-name="vtopmart 25 pcs clear plastic drawer organizers set, 4-size versatile bathroom and vanity drawer organizer trays, sto..." data-pid="342180e1" data-price="24.99" data-sold="68" onclick="PD.openProduct('342180e1')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/81yj+PUYVxL._AC_UL960_QL65_.jpg" alt="Vtopmart Clear Plastic Drawer Organizers Set 4-Size" loading="lazy">
         <div class="card-labels"></div>
         <span class="card-cat">Desk</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 12 left</span>
-          <span class="fomo-sold">23+ sold</span>
+          <span class="fomo-stock">Only 14 left</span>
+          <span class="fomo-sold">68+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -381,14 +381,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="desk_gadgets" data-name="laborio computer keyboard wrist rest stand for desktop, keyboard holder for easy typing with wrist pad for office des..." data-pid="2279fade" data-price="24.99" data-sold="68" onclick="PD.openProduct('2279fade')">
+    <div class="card" data-niche="desk_gadgets" data-name="laborio computer keyboard wrist rest stand for desktop, keyboard holder for easy typing with wrist pad for office des..." data-pid="2279fade" data-price="24.99" data-sold="47" onclick="PD.openProduct('2279fade')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/61v5t9ncx5L._AC_UL960_QL65_.jpg" alt="Laborio Computer Keyboard Wrist Rest Stand" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Desk</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 4 left</span>
-          <span class="fomo-sold">68+ sold</span>
+          <span class="fomo-stock">Only 6 left</span>
+          <span class="fomo-sold">47+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -406,14 +406,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="desk_gadgets" data-name="cork desk mat - dual-sided desk pad for office and home - desk organization and accessories - ideal for large mouse p..." data-pid="a7bd3e1c" data-price="24.99" data-sold="68" onclick="PD.openProduct('a7bd3e1c')">
+    <div class="card" data-niche="desk_gadgets" data-name="cork desk mat - dual-sided desk pad for office and home - desk organization and accessories - ideal for large mouse p..." data-pid="a7bd3e1c" data-price="24.99" data-sold="508" onclick="PD.openProduct('a7bd3e1c')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/61lECM81c2L._AC_UL960_QL65_.jpg" alt="Cork Desk Mat - Dual-Sided Desk Pad" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Desk</span>
         <div class="card-fomo">
           <span class="fomo-stock">Only 6 left</span>
-          <span class="fomo-sold">68+ sold</span>
+          <span class="fomo-sold">508+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -431,14 +431,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="starfrit rotato express electric peeler - 2 spare blades - safe &amp;amp; easy to use - effortlessly peels vegetables and..." data-pid="cdf1ab53" data-price="29.19" data-sold="419" onclick="PD.openProduct('cdf1ab53')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="starfrit rotato express electric peeler - 2 spare blades - safe &amp;amp; easy to use - effortlessly peels vegetables and..." data-pid="cdf1ab53" data-price="29.19" data-sold="508" onclick="PD.openProduct('cdf1ab53')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/710ejJuESsL._AC_UL960_QL65_.jpg" alt="Starfrit Rotato Express Electric Peeler" loading="lazy">
         <div class="card-labels"></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 14 left</span>
-          <span class="fomo-sold">419+ sold</span>
+          <span class="fomo-stock">Only 12 left</span>
+          <span class="fomo-sold">508+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -456,14 +456,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="desk_gadgets" data-name="metal desk organizers and accessories with file holder – aesthetic black desk accessories for women office setup – de..." data-pid="d7ae3014" data-price="24.99" data-sold="419" onclick="PD.openProduct('d7ae3014')">
+    <div class="card" data-niche="desk_gadgets" data-name="metal desk organizers and accessories with file holder – aesthetic black desk accessories for women office setup – de..." data-pid="d7ae3014" data-price="24.99" data-sold="287" onclick="PD.openProduct('d7ae3014')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/91Bd5vXWiIL._AC_UL960_QL65_.jpg" alt="Metal Desk Organizers and Accessories" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Desk</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 4 left</span>
-          <span class="fomo-sold">419+ sold</span>
+          <span class="fomo-stock">Only 3 left</span>
+          <span class="fomo-sold">287+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -487,7 +487,7 @@
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 4 left</span>
+          <span class="fomo-stock">Only 7 left</span>
           <span class="fomo-sold">156+ sold</span>
         </div>
       </div>
@@ -506,14 +506,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="new crabby clip-on strainer by ototo - silicone and stainless steel pasta strainer, funny gifts, cute kitchen accesso..." data-pid="dcf380ea" data-price="16.95" data-sold="419" onclick="PD.openProduct('dcf380ea')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="new crabby clip-on strainer by ototo - silicone and stainless steel pasta strainer, funny gifts, cute kitchen accesso..." data-pid="dcf380ea" data-price="16.95" data-sold="112" onclick="PD.openProduct('dcf380ea')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/71AV-63wPjL._AC_UL960_QL65_.jpg" alt="NEW Crabby Clip-On Strainer by OTOTO" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 4 left</span>
-          <span class="fomo-sold">419+ sold</span>
+          <span class="fomo-stock">Only 5 left</span>
+          <span class="fomo-sold">112+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -531,14 +531,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="suretivian chicken shredder large chicken breast shredder tool twist with brush&amp;amp;fork, visible meat shredder machi..." data-pid="deecfd78" data-price="19.99" data-sold="89" onclick="PD.openProduct('deecfd78')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="suretivian chicken shredder large chicken breast shredder tool twist with brush&amp;amp;fork, visible meat shredder machi..." data-pid="deecfd78" data-price="19.99" data-sold="287" onclick="PD.openProduct('deecfd78')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/71d6vBNDknL._AC_UL960_QL65_.jpg" alt="SURETIVIAN Chicken Shredder Large Breast Tool Twist" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 8 left</span>
-          <span class="fomo-sold">89+ sold</span>
+          <span class="fomo-stock">Only 6 left</span>
+          <span class="fomo-sold">287+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -556,14 +556,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="kitchen utensil set-silicone cooking utensils-33 kitchen gadgets &amp;amp; spoons for nonstick cookware-silicone and stai..." data-pid="c32fc230" data-price="29.99" data-sold="419" onclick="PD.openProduct('c32fc230')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="kitchen utensil set-silicone cooking utensils-33 kitchen gadgets &amp;amp; spoons for nonstick cookware-silicone and stai..." data-pid="c32fc230" data-price="29.99" data-sold="23" onclick="PD.openProduct('c32fc230')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/71J6P8L6ORL._AC_UL960_QL65_.jpg" alt="Kitchen Utensil Set-Silicone Cooking Utensils-33" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 3 left</span>
-          <span class="fomo-sold">419+ sold</span>
+          <span class="fomo-stock">Only 6 left</span>
+          <span class="fomo-sold">23+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -587,7 +587,7 @@
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Desk</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 14 left</span>
+          <span class="fomo-stock">Only 7 left</span>
           <span class="fomo-sold">89+ sold</span>
         </div>
       </div>
@@ -606,14 +606,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="omaia 2-in-1 dish soap dispenser with sponge holder - smart kitchen gadget - sink countertop organizer" data-pid="b39cc67c" data-price="21.99" data-sold="156" onclick="PD.openProduct('b39cc67c')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="omaia 2-in-1 dish soap dispenser with sponge holder - smart kitchen gadget - sink countertop organizer" data-pid="b39cc67c" data-price="21.99" data-sold="47" onclick="PD.openProduct('b39cc67c')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/8131tWdYFfL._AC_UL960_QL65_.jpg" alt="OMAIA 2-in-1 Dish Soap Dispenser" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 12 left</span>
-          <span class="fomo-sold">156+ sold</span>
+          <span class="fomo-stock">Only 3 left</span>
+          <span class="fomo-sold">47+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -631,14 +631,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="3 in one avocado slicer with food grade bpa free plastic and stainless-steel pitter - multipurpose ergonomic kitchen ..." data-pid="f35d2464" data-price="21.99" data-sold="156" onclick="PD.openProduct('f35d2464')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="3 in one avocado slicer with food grade bpa free plastic and stainless-steel pitter - multipurpose ergonomic kitchen ..." data-pid="f35d2464" data-price="21.99" data-sold="47" onclick="PD.openProduct('f35d2464')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/51fqaXTRe+L._AC_SL1500_.jpg" alt="3 in One Avocado Slicer" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 6 left</span>
-          <span class="fomo-sold">156+ sold</span>
+          <span class="fomo-stock">Only 3 left</span>
+          <span class="fomo-sold">47+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -656,14 +656,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="zulay kitchen spoon rest for multiple utensils high heat-resistant silicone drip pad, bpa-free spoon holder for stove..." data-pid="26d100bd" data-price="9.99" data-sold="287" onclick="PD.openProduct('26d100bd')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="zulay kitchen spoon rest for multiple utensils high heat-resistant silicone drip pad, bpa-free spoon holder for stove..." data-pid="26d100bd" data-price="9.99" data-sold="47" onclick="PD.openProduct('26d100bd')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/71wvVLKByeL._AC_UL960_QL65_.jpg" alt="Zulay Kitchen Spoon Rest for Multiple Utensils High" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 11 left</span>
-          <span class="fomo-sold">287+ sold</span>
+          <span class="fomo-stock">Only 3 left</span>
+          <span class="fomo-sold">47+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -681,14 +681,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="peleg design handheld cheese grater | mini cheese grater durable rust-proof metal sword-shaped, for cheese, chocolate..." data-pid="07ae64f7" data-price="15.90" data-sold="341" onclick="PD.openProduct('07ae64f7')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="peleg design handheld cheese grater | mini cheese grater durable rust-proof metal sword-shaped, for cheese, chocolate..." data-pid="07ae64f7" data-price="15.90" data-sold="89" onclick="PD.openProduct('07ae64f7')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/81isqPahIEL._AC_UL960_QL65_.jpg" alt="PELEG DESIGN Handheld Cheese Grater" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 11 left</span>
-          <span class="fomo-sold">341+ sold</span>
+          <span class="fomo-stock">Only 3 left</span>
+          <span class="fomo-sold">89+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -706,14 +706,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="desk_gadgets" data-name="mosiso wrist rest support for mouse pad&amp;amp;keyboard set, circle curved ergonomic mousepad&amp;amp;coaster non-slip base ..." data-pid="56b15778" data-price="9.99" data-sold="89" onclick="PD.openProduct('56b15778')">
+    <div class="card" data-niche="desk_gadgets" data-name="mosiso wrist rest support for mouse pad&amp;amp;keyboard set, circle curved ergonomic mousepad&amp;amp;coaster non-slip base ..." data-pid="56b15778" data-price="9.99" data-sold="23" onclick="PD.openProduct('56b15778')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/515G2Wi323L._AC_UL960_QL65_.jpg" alt="MOSISO Wrist Rest Support for Mouse Pad&amp;Keyboard" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Desk</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 7 left</span>
-          <span class="fomo-sold">89+ sold</span>
+          <span class="fomo-stock">Only 12 left</span>
+          <span class="fomo-sold">23+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -737,7 +737,7 @@
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 14 left</span>
+          <span class="fomo-stock">Only 4 left</span>
           <span class="fomo-sold">203+ sold</span>
         </div>
       </div>
@@ -756,14 +756,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="ototo gracula garlic crusher, garlic mincer, also for ginger, nuts, chili, herbs - twist top mincer &amp;amp; easy squeez..." data-pid="d1fdb559" data-price="12.95" data-sold="156" onclick="PD.openProduct('d1fdb559')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="ototo gracula garlic crusher, garlic mincer, also for ginger, nuts, chili, herbs - twist top mincer &amp;amp; easy squeez..." data-pid="d1fdb559" data-price="12.95" data-sold="47" onclick="PD.openProduct('d1fdb559')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/71HqXf8PfIL._AC_UL960_QL65_.jpg" alt="OTOTO Gracula Garlic Crusher Mincer" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 14 left</span>
-          <span class="fomo-sold">156+ sold</span>
+          <span class="fomo-stock">Only 6 left</span>
+          <span class="fomo-sold">47+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -781,14 +781,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="desk_gadgets" data-name="rotating pomodoro timer 5, 25, 10 50 minutes preset, desk productivity flip timer, adhd tool cube countdown stopwatch..." data-pid="28a23670" data-price="28.99" data-sold="287" onclick="PD.openProduct('28a23670')">
+    <div class="card" data-niche="desk_gadgets" data-name="rotating pomodoro timer 5, 25, 10 50 minutes preset, desk productivity flip timer, adhd tool cube countdown stopwatch..." data-pid="28a23670" data-price="28.99" data-sold="341" onclick="PD.openProduct('28a23670')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/61ROjRaowcL._AC_UL960_QL65_.jpg" alt="Rotating Pomodoro Timer 5 25" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Desk</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 14 left</span>
-          <span class="fomo-sold">287+ sold</span>
+          <span class="fomo-stock">Only 12 left</span>
+          <span class="fomo-sold">341+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -806,14 +806,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="desk_gadgets" data-name="lamicall cell phone stand, desk accessories - clear office cell phone holder, acrylic phone stand, desktop, acrylic o..." data-pid="53a0ec59" data-price="7.98" data-sold="419" onclick="PD.openProduct('53a0ec59')">
+    <div class="card" data-niche="desk_gadgets" data-name="lamicall cell phone stand, desk accessories - clear office cell phone holder, acrylic phone stand, desktop, acrylic o..." data-pid="53a0ec59" data-price="7.98" data-sold="341" onclick="PD.openProduct('53a0ec59')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/61cqKUkBTKL._AC_UL960_QL65_.jpg" alt="Lamicall Cell Phone Stand Desk Accessories" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Desk</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 8 left</span>
-          <span class="fomo-sold">419+ sold</span>
+          <span class="fomo-stock">Only 4 left</span>
+          <span class="fomo-sold">341+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -831,14 +831,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="0.5 sec instant read meat thermometer digital with ±0.5℉ precision, food thermometer for cooking kitchen gadgets, ove..." data-pid="4ffda95b" data-price="13.99" data-sold="419" onclick="PD.openProduct('4ffda95b')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="0.5 sec instant read meat thermometer digital with ±0.5℉ precision, food thermometer for cooking kitchen gadgets, ove..." data-pid="4ffda95b" data-price="13.99" data-sold="156" onclick="PD.openProduct('4ffda95b')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/61is4F1PDOL._AC_UL960_QL65_.jpg" alt="0.5 Sec Instant Read Meat Thermometer Digital" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 6 left</span>
-          <span class="fomo-sold">419+ sold</span>
+          <span class="fomo-stock">Only 7 left</span>
+          <span class="fomo-sold">156+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -856,14 +856,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="desk_gadgets" data-name="officemate large incline 8 compartment wire caddy, black, 8.5 x 10.375 x 12.625 inches" data-pid="9eae361c" data-price="39.99" data-sold="47" onclick="PD.openProduct('9eae361c')">
+    <div class="card" data-niche="desk_gadgets" data-name="officemate large incline 8 compartment wire caddy, black, 8.5 x 10.375 x 12.625 inches" data-pid="9eae361c" data-price="39.99" data-sold="508" onclick="PD.openProduct('9eae361c')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/716OK0CG53L._AC_UL960_QL65_.jpg" alt="Officemate Large Incline 8 Compartment Wire Caddy" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Desk</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 8 left</span>
-          <span class="fomo-sold">47+ sold</span>
+          <span class="fomo-stock">Only 6 left</span>
+          <span class="fomo-sold">508+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -881,14 +881,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="new - ototo sal scarecrow salad tongs (2-piece) - wooden tongs set, food safe toaster tongs for serving, cute kitchen..." data-pid="22db4340" data-price="34.99" data-sold="23" onclick="PD.openProduct('22db4340')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="new - ototo sal scarecrow salad tongs (2-piece) - wooden tongs set, food safe toaster tongs for serving, cute kitchen..." data-pid="22db4340" data-price="34.99" data-sold="341" onclick="PD.openProduct('22db4340')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/71WmP7dxETL._AC_UL960_QL65_.jpg" alt="NEW - OTOTO Sal Scarecrow Salad Tongs" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 7 left</span>
-          <span class="fomo-sold">23+ sold</span>
+          <span class="fomo-stock">Only 11 left</span>
+          <span class="fomo-sold">341+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -906,14 +906,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="kitchen_gadgets" data-name="4-in-1 kitchen knife accessories: 3-stage knife sharpener helps repair, restore, polish blades and cut-resistant glov..." data-pid="d3adaef3" data-price="39.99" data-sold="89" onclick="PD.openProduct('d3adaef3')">
+    <div class="card" data-niche="kitchen_gadgets" data-name="4-in-1 kitchen knife accessories: 3-stage knife sharpener helps repair, restore, polish blades and cut-resistant glov..." data-pid="d3adaef3" data-price="39.99" data-sold="508" onclick="PD.openProduct('d3adaef3')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/81Zk39cqnvL._AC_UL960_QL65_.jpg" alt="4-in-1 Kitchen Knife Accessories: 3-Stage Sharpener" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Kitchen</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 4 left</span>
-          <span class="fomo-sold">89+ sold</span>
+          <span class="fomo-stock">Only 7 left</span>
+          <span class="fomo-sold">508+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -931,14 +931,14 @@
         </div>
       </div>
     </div>
-    <div class="card" data-niche="desk_gadgets" data-name="blisstrends foot rest for under desk at work-versatile foot stool with washable cover-comfortable footrest with 2 adj..." data-pid="93ac6a84" data-price="34.99" data-sold="508" onclick="PD.openProduct('93ac6a84')">
+    <div class="card" data-niche="desk_gadgets" data-name="blisstrends foot rest for under desk at work-versatile foot stool with washable cover-comfortable footrest with 2 adj..." data-pid="93ac6a84" data-price="34.99" data-sold="287" onclick="PD.openProduct('93ac6a84')">
       <div class="card-img">
         <img src="https://m.media-amazon.com/images/I/81x+otHOTeL._AC_UL960_QL65_.jpg" alt="Foot Rest for Under Desk at Work-Versatile Foot Stool" loading="lazy">
         <div class="card-labels"><span class="lbl lbl-hot">🔥 Hot</span></div>
         <span class="card-cat">Desk</span>
         <div class="card-fomo">
-          <span class="fomo-stock">Only 5 left</span>
-          <span class="fomo-sold">508+ sold</span>
+          <span class="fomo-stock">Only 11 left</span>
+          <span class="fomo-sold">287+ sold</span>
         </div>
       </div>
       <div class="card-body">
@@ -966,17 +966,17 @@
         <div class="bg">
     <div class="bc">
       <div class="bc-top"><span class="bc-name">🍳 Kitchen Essentials Starter Kit</span><span class="bc-tag">Save 10%</span></div>
-      <ul class="bc-list"><li>The Original Pro Chopper</li><li>Bench Scraper &amp; Chopper</li><li>AWOKE Stove Top Shelf 30 Inch</li></ul>
-      <div class="bc-bot"><span class="bc-price">$66.57</span><span class="bc-was">$73.97</span></div>
+      <ul class="bc-list"><li>The Original Pro Chopper</li><li>MCGOR 10inch Under Cabinet Lighting R...</li><li>AWOKE Stove Top Shelf 30 Inch</li></ul>
+      <div class="bc-bot"><span class="bc-price">$71.07</span><span class="bc-was">$78.97</span></div>
     </div>
     <div class="bc">
       <div class="bc-top"><span class="bc-name">🔥 Premium Kitchen Collection</span><span class="bc-tag">Save 15%</span></div>
-      <ul class="bc-list"><li>MCGOR 10inch Under Cabinet Lighting R...</li><li>OTOTO Splatypus Jar Spatula for Scoop...</li><li>Astercook Deep-Carbonized Bamboo Cutt...</li><li>Aluminum Alloy Tomato &amp; Lemon Slicer ...</li><li>Starfrit Rotato Express Electric Peeler</li></ul>
-      <div class="bc-bot"><span class="bc-price">$113.14</span><span class="bc-was">$133.11</span></div>
+      <ul class="bc-list"><li>Bench Scraper &amp; Chopper</li><li>Astercook Deep-Carbonized Bamboo Cutt...</li><li>Aluminum Alloy Tomato &amp; Lemon Slicer ...</li><li>Starfrit Rotato Express Electric Peeler</li><li>OTOTO Swanky Swan Soup Ladle</li></ul>
+      <div class="bc-bot"><span class="bc-price">$111.48</span><span class="bc-was">$131.15</span></div>
     </div>
     <div class="bc">
       <div class="bc-top"><span class="bc-name">🖥️ Desk Setup Starter Kit</span><span class="bc-tag">Save 10%</span></div>
-      <ul class="bc-list"><li>ODISTAR Desktop Vacuum Cleaner Mini T...</li><li>6.5 Inch USB Small Desk Fan 3 Speeds ...</li><li>PD30W Desk Clamp Power Strip Desktop ...</li></ul>
+      <ul class="bc-list"><li>6.5 Inch USB Small Desk Fan 3 Speeds ...</li><li>ODISTAR Desktop Vacuum Cleaner Mini T...</li><li>PD30W Desk Clamp Power Strip Desktop ...</li></ul>
       <div class="bc-bot"><span class="bc-price">$84.57</span><span class="bc-was">$93.97</span></div>
     </div>
     <div class="bc">
@@ -986,26 +986,18 @@
     </div>
     <div class="bc">
       <div class="bc-top"><span class="bc-name">✨ Ultimate Gadget Bundle</span><span class="bc-tag">Save 12%</span></div>
-      <ul class="bc-list"><li>OTOTO Swanky Swan Soup Ladle</li><li>NEW Crabby Clip-On Strainer by OTOTO</li><li>KDD 7 in 1 Clamp-on Desk Pegboard</li><li>MOSISO Wrist Rest Support for Mouse P...</li></ul>
-      <div class="bc-bot"><span class="bc-price">$67.69</span><span class="bc-was">$76.92</span></div>
+      <ul class="bc-list"><li>NEW Crabby Clip-On Strainer by OTOTO</li><li>OTOTO Splatypus Jar Spatula for Scoop...</li><li>KDD 7 in 1 Clamp-on Desk Pegboard</li><li>MOSISO Wrist Rest Support for Mouse P...</li></ul>
+      <div class="bc-bot"><span class="bc-price">$65.01</span><span class="bc-was">$73.88</span></div>
     </div>
     <div class="bc">
       <div class="bc-top"><span class="bc-name">🚀 Trending Now Bundle</span><span class="bc-tag">Save 10%</span></div>
-      <ul class="bc-list"><li>SURETIVIAN Chicken Shredder Large Bre...</li><li>Kitchen Utensil Set-Silicone Cooking ...</li><li>OMAIA 2-in-1 Dish Soap Dispenser</li></ul>
-      <div class="bc-bot"><span class="bc-price">$64.77</span><span class="bc-was">$71.97</span></div>
+      <ul class="bc-list"><li>Kitchen Utensil Set-Silicone Cooking ...</li><li>OMAIA 2-in-1 Dish Soap Dispenser</li><li>3 in One Avocado Slicer</li></ul>
+      <div class="bc-bot"><span class="bc-price">$66.57</span><span class="bc-was">$73.97</span></div>
     </div></div>
       </div>
     </section>
 
-  <footer>
-    <div class="f-brand">Phoenix<em>Drop</em></div>
-    <div class="f-links">
-      <a href="#">TikTok</a>
-      <a href="#">Instagram</a>
-      <a href="#">Contact</a>
-    </div>
-    <p class="f-copy">&copy; 2026 PhoenixDrop. All rights reserved.</p>
-  </footer>
+  
 
   <div class="modal-overlay"><div class="modal"></div></div>
 
@@ -1098,5 +1090,726 @@ window.PD.buildReviewForm=function(pid,pname){
 };
 </script>
 
+<style>
+.bc-detail{max-height:0;overflow:hidden;transition:max-height .4s ease-in-out}
+.bc.bc-open .bc-detail{max-height:800px}
+.bc-peek{display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:10px 0 4px}
+.bc-peek-text{font-size:13px;font-weight:600;color:#7c3aed}
+.bc-peek-arrow{font-size:16px;color:#7c3aed;transition:transform .3s}
+.bc.bc-open .bc-peek-arrow{transform:rotate(180deg)}
+.bc-peek:hover .bc-peek-text{text-decoration:underline}
+.bc-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #f3f4f6}
+.bc-row:last-child{border-bottom:none}
+.bc-row img{width:52px;height:52px;object-fit:cover;border-radius:10px;border:1px solid #e5e7eb;flex-shrink:0;background:#f9fafb}
+.bc-row-info{flex:1;min-width:0}
+.bc-row-name{font-size:13px;color:#374151;line-height:1.3;display:block}
+.bc-row-price{font-size:13px;font-weight:700;color:#7c3aed;margin-top:2px;display:block}
+.bc-summary{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0 0;margin-top:6px;border-top:2px solid #e5e7eb}
+.bc-summary-price{font-size:22px;font-weight:800;color:#111827}
+.bc-summary-was{font-size:14px;color:#9ca3af;text-decoration:line-through;margin-left:8px}
+.bc-summary-save{font-size:12px;font-weight:700;color:#10b981}
+.bundle-add-btn{width:100%;padding:14px 20px;background:#7c3aed;color:#fff;border:none;border-radius:10px;font-weight:700;cursor:pointer;margin-top:14px;font-size:15px;letter-spacing:.3px;transition:all .2s;box-shadow:0 2px 8px rgba(124,58,237,.3)}
+.bundle-add-btn:hover{background:#6d28d9;transform:scale(1.03)}
+</style>
+<script>
+(function() {
+    var BD = [{"products": [{"name": "Fullstar The Original Pro Chopper - Vegetable Chopper and Spiralizer, Food Chopper with Container, Fruit Slicer, Kitc...", "short_name": "Fullstar The Original Pro Chopper -...", "sell_price": 24.99, "phoenix_score": 82.8, "image_url": "https://m.media-amazon.com/images/I/81GZZyozv-L._AC_UL960_QL65_.jpg"}, {"name": "ALLTOP Bench Scraper &amp; Chopper for Kitchen - Ideal Baking Essential Utensil,Stainless Steel Pastry/Dough/Food Cut...", "short_name": "ALLTOP Bench Scraper & Chopper for Kitchen -...", "sell_price": 19.99, "phoenix_score": 79.1, "image_url": "https://m.media-amazon.com/images/I/51GRGFJDSkL._AC_UL960_QL65_.jpg"}, {"name": "AWOKE Stove Top Shelf 30 Inch - Silicone Material Magnetic Shelf for Stove - 3 Functional Partitions Kitchen Spice Ra...", "short_name": "AWOKE Stove Top Shelf 30 Inch - Silicone...", "sell_price": 28.99, "phoenix_score": 78.9, "image_url": "https://m.media-amazon.com/images/I/71zx5Vy8u+L._AC_UL960_QL65_.jpg"}], "bundle_price": 66.57, "individual_total": 73.97, "savings": 7.4, "discount_pct": 10, "avg_phoenix_score": 80.3, "id": "bundle_0", "name": "🍳 Kitchen Essentials Starter Kit", "type": "kitchen_starter", "niche": "kitchen_gadgets"}, {"products": [{"name": "MCGOR 10inch Under Cabinet Lighting, 2 Pack Rechargeable Motion Sensor Light Indoor, 5 Levels Dimmable Magnetic Close...", "short_name": "MCGOR 10inch Under Cabinet Lighting, 2 Pack...", "sell_price": 24.99, "phoenix_score": 78.1, "image_url": "https://m.media-amazon.com/images/I/61x62WLGvNL._AC_UL960_QL65_.jpg"}, {"name": "OTOTO Splatypus Jar Spatula for Scooping and Scraping - Unique Fun Cooking Kitchen Gadgets for Foodies - BPA-free &am...", "short_name": "OTOTO Splatypus Jar Spatula for Scooping and...", "sell_price": 21.95, "phoenix_score": 76.4, "image_url": "https://m.media-amazon.com/images/I/61kSyC6HXDL._AC_UL960_QL65_.jpg"}, {"name": "Astercook Deep-Carbonized Bamboo Cutting Boards for Kitchen with Wood Storage Stand, Reversible Charcuterie &amp; Cho...", "short_name": "Astercook Deep-Carbonized Bamboo Cutting...", "sell_price": 29.99, "phoenix_score": 74.9, "image_url": "https://m.media-amazon.com/images/I/91xky+JYmZL._AC_UL960_QL65_.jpg"}, {"name": "Aluminum Alloy Tomato &amp; Lemon Slicer Holder - Manual Fruit and Onion Cutter Tool with Handle, Vegetable Cutting T...", "short_name": "Aluminum Alloy Tomato & Lemon Slicer Holder...", "sell_price": 26.99, "phoenix_score": 74.0, "image_url": "https://m.media-amazon.com/images/I/51JuJvRk6DL._AC_UL960_QL65_.jpg"}, {"name": "Starfrit Rotato Express Electric Peeler - 2 Spare Blades - Safe &amp; Easy to Use - Effortlessly Peels Vegetables and...", "short_name": "Starfrit Rotato Express Electric Peeler - 2...", "sell_price": 29.19, "phoenix_score": 73.1, "image_url": "https://m.media-amazon.com/images/I/710ejJuESsL._AC_UL960_QL65_.jpg"}], "bundle_price": 113.14, "individual_total": 133.11, "savings": 19.97, "discount_pct": 15, "avg_phoenix_score": 75.3, "id": "bundle_1", "name": "🔥 Premium Kitchen Collection", "type": "kitchen_premium", "niche": "kitchen_gadgets"}, {"products": [{"name": "ODISTAR Desktop Vacuum Cleaner, Mini Table dust Sweeper Energy Saving,High Endurance up to 90 mins,Cordless&amp;360º ...", "short_name": "ODISTAR Desktop Vacuum Cleaner, Mini Table...", "sell_price": 28.99, "phoenix_score": 80.2, "image_url": "https://m.media-amazon.com/images/I/51bbbt-YaEL._AC_UL960_QL65_.jpg"}, {"name": "SWEETFULL 6.5 Inch USB Small Desk Fan, 3 Speeds Quiet Portable Desktop Table Fan, 360° Adjustment Personal Mini Fan f...", "short_name": "SWEETFULL 6.5 Inch USB Small Desk Fan, 3...", "sell_price": 39.99, "phoenix_score": 78.5, "image_url": "https://m.media-amazon.com/images/I/71s4bcH0C7L._AC_UL960_QL65_.jpg"}, {"name": "PD30W Desk Clamp Power Strip, Desktop Mount Surge Protector, Fast Charging Station, 5Ft Extension Cord Desk Edge Moun...", "short_name": "PD30W Desk Clamp Power Strip, Desktop Mount...", "sell_price": 24.99, "phoenix_score": 74.7, "image_url": "https://m.media-amazon.com/images/I/51oCgzEjdrL._AC_UL960_QL65_.jpg"}], "bundle_price": 84.57, "individual_total": 93.97, "savings": 9.4, "discount_pct": 10, "avg_phoenix_score": 77.8, "id": "bundle_2", "name": "🖥️ Desk Setup Starter Kit", "type": "desk_starter", "niche": "desk_gadgets"}, {"products": [{"name": "Cable Management, 25&#x27;&#x27; Cable Management Under Desk No Drill, Metal Cord Organizer with Clamp for Standing D...", "short_name": "Cable Management, 25'' Cable Management...", "sell_price": 24.99, "phoenix_score": 74.5, "image_url": "https://m.media-amazon.com/images/I/719HqEdBSvL._AC_UL960_QL65_.jpg"}, {"name": "Vtopmart 25 PCS Clear Plastic Drawer Organizers Set, 4-Size Versatile Bathroom and Vanity Drawer Organizer Trays, Sto...", "short_name": "Vtopmart 25 PCS Clear Plastic Drawer...", "sell_price": 24.99, "phoenix_score": 73.7, "image_url": "https://m.media-amazon.com/images/I/81yj+PUYVxL._AC_UL960_QL65_.jpg"}, {"name": "Laborio Computer Keyboard Wrist Rest Stand for Desktop, Keyboard Holder for Easy Typing with Wrist Pad for Office Des...", "short_name": "Laborio Computer Keyboard Wrist Rest Stand...", "sell_price": 24.99, "phoenix_score": 73.2, "image_url": "https://m.media-amazon.com/images/I/61v5t9ncx5L._AC_UL960_QL65_.jpg"}, {"name": "Cork Desk Mat - Dual-Sided Desk Pad for Office and Home - Desk Organization and Accessories - Ideal for Large Mouse P...", "short_name": "Cork Desk Mat - Dual-Sided Desk Pad for...", "sell_price": 24.99, "phoenix_score": 73.2, "image_url": "https://m.media-amazon.com/images/I/61lECM81c2L._AC_UL960_QL65_.jpg"}, {"name": "Metal Desk Organizers and Accessories with File Holder – Aesthetic Black Desk Accessories for Women Office Setup – De...", "short_name": "Metal Desk Organizers and Accessories with...", "sell_price": 24.99, "phoenix_score": 73.0, "image_url": "https://m.media-amazon.com/images/I/91Bd5vXWiIL._AC_UL960_QL65_.jpg"}], "bundle_price": 106.21, "individual_total": 124.95, "savings": 18.74, "discount_pct": 15, "avg_phoenix_score": 73.5, "id": "bundle_3", "name": "💻 Premium Desk Collection", "type": "desk_premium", "niche": "desk_gadgets"}, {"products": [{"name": "OTOTO Swanky Swan Soup Ladle - Heat Resistant Soup Ladles - Cute Kitchen Accessories, Unique Kitchen Gifts, Fun Cooki...", "short_name": "OTOTO Swanky Swan Soup Ladle - Heat...", "sell_price": 24.99, "phoenix_score": 72.7, "image_url": "https://m.media-amazon.com/images/I/31314hgizlL._AC_UL960_QL65_.jpg"}, {"name": "NEW Crabby Clip-On Strainer by OTOTO - Silicone and Stainless Steel Pasta Strainer, Funny Gifts, Cute Kitchen Accesso...", "short_name": "NEW Crabby Clip-On Strainer by OTOTO -...", "sell_price": 16.95, "phoenix_score": 72.5, "image_url": "https://m.media-amazon.com/images/I/71AV-63wPjL._AC_UL960_QL65_.jpg"}, {"name": "KDD 7 in 1 Clamp-on Desk Pegboard - No Drill Desk Side Storage with Phone Stand/Pen Holder/Storage Box/Headset &amp; ...", "short_name": "KDD 7 in 1 Clamp-on Desk Pegboard - No Drill...", "sell_price": 24.99, "phoenix_score": 71.3, "image_url": "https://m.media-amazon.com/images/I/719oiaHs4GL._AC_UL960_QL65_.jpg"}, {"name": "MOSISO Wrist Rest Support for Mouse Pad&amp;Keyboard Set, Circle Curved Ergonomic Mousepad&amp;Coaster Non-Slip Base ...", "short_name": "MOSISO Wrist Rest Support for Mouse...", "sell_price": 9.99, "phoenix_score": 69.2, "image_url": "https://m.media-amazon.com/images/I/515G2Wi323L._AC_UL960_QL65_.jpg"}], "bundle_price": 67.69, "individual_total": 76.92, "savings": 9.23, "discount_pct": 12, "avg_phoenix_score": 71.4, "id": "bundle_4", "name": "✨ Ultimate Gadget Bundle", "type": "cross_niche", "niche": "mixed"}, {"products": [{"name": "SURETIVIAN Chicken Shredder Large Chicken Breast Shredder Tool Twist with Brush&amp;Fork, Visible Meat Shredder Machi...", "short_name": "SURETIVIAN Chicken Shredder Large Chicken...", "sell_price": 19.99, "phoenix_score": 72.2, "image_url": "https://m.media-amazon.com/images/I/71d6vBNDknL._AC_UL960_QL65_.jpg"}, {"name": "Kitchen Utensil Set-Silicone Cooking Utensils-33 Kitchen Gadgets &amp; Spoons for Nonstick Cookware-Silicone and Stai...", "short_name": "Kitchen Utensil Set-Silicone Cooking...", "sell_price": 29.99, "phoenix_score": 72.0, "image_url": "https://m.media-amazon.com/images/I/71J6P8L6ORL._AC_UL960_QL65_.jpg"}, {"name": "OMAIA 2-in-1 Dish Soap Dispenser with Sponge Holder - Smart Kitchen Gadget - Sink Countertop Organizer", "short_name": "OMAIA 2-in-1 Dish Soap Dispenser with Sponge...", "sell_price": 21.99, "phoenix_score": 70.5, "image_url": "https://m.media-amazon.com/images/I/8131tWdYFfL._AC_UL960_QL65_.jpg"}], "bundle_price": 64.77, "individual_total": 71.97, "savings": 7.2, "discount_pct": 10, "avg_phoenix_score": 71.6, "id": "bundle_5", "name": "🚀 Trending Now Bundle", "type": "trending", "niche": "mixed"}];
+    var cards = document.querySelectorAll(".bc");
+    for (var c = 0; c < cards.length; c++) {
+        (function(card, idx) {
+            if (idx >= BD.length) return;
+            var b = BD[idx];
+
+            var oldItems = card.querySelector(".bc-items");
+            if (oldItems) oldItems.style.display = "none";
+            var oldPrice = card.querySelector(".bc-price");
+            if (oldPrice) oldPrice.style.display = "none";
+            var oldBtn = card.querySelector(".bundle-add-btn");
+            if (oldBtn) oldBtn.remove();
+
+            var peek = document.createElement("div");
+            peek.className = "bc-peek";
+            var peekText = document.createElement("span");
+            peekText.className = "bc-peek-text";
+            peekText.textContent = "View " + b.products.length + " items inside";
+            var peekArrow = document.createElement("span");
+            peekArrow.className = "bc-peek-arrow";
+            peekArrow.innerHTML = "&#9660;";
+            peek.appendChild(peekText);
+            peek.appendChild(peekArrow);
+            peek.addEventListener("click", function(e) {
+                e.stopPropagation();
+                card.classList.toggle("bc-open");
+                if (card.classList.contains("bc-open")) {
+                    peekText.textContent = "Hide items";
+                } else {
+                    peekText.textContent = "View " + b.products.length + " items inside";
+                }
+            });
+
+            var detail = document.createElement("div");
+            detail.className = "bc-detail";
+            for (var j = 0; j < b.products.length; j++) {
+                var pr = b.products[j];
+                var row = document.createElement("div");
+                row.className = "bc-row";
+                var img = document.createElement("img");
+                img.src = pr.image_url || "";
+                img.alt = "";
+                img.onerror = function() { this.style.display = "none"; };
+                var info = document.createElement("div");
+                info.className = "bc-row-info";
+                var nm = document.createElement("span");
+                nm.className = "bc-row-name";
+                nm.textContent = pr.short_name;
+                var px = document.createElement("span");
+                px.className = "bc-row-price";
+                px.textContent = "$" + pr.sell_price.toFixed(2);
+                info.appendChild(nm);
+                info.appendChild(px);
+                row.appendChild(img);
+                row.appendChild(info);
+                detail.appendChild(row);
+            }
+
+            var summary = document.createElement("div");
+            summary.className = "bc-summary";
+            var sLeft = document.createElement("div");
+            var sPrice = document.createElement("span");
+            sPrice.className = "bc-summary-price";
+            sPrice.textContent = "$" + b.bundle_price.toFixed(2);
+            var sWas = document.createElement("span");
+            sWas.className = "bc-summary-was";
+            sWas.textContent = "$" + b.individual_total.toFixed(2);
+            sLeft.appendChild(sPrice);
+            sLeft.appendChild(sWas);
+            var sSave = document.createElement("span");
+            sSave.className = "bc-summary-save";
+            sSave.textContent = "You save $" + b.savings.toFixed(2);
+            summary.appendChild(sLeft);
+            summary.appendChild(sSave);
+            detail.appendChild(summary);
+
+            card.appendChild(peek);
+            card.appendChild(detail);
+
+            var bName = "";
+            var nameEl = card.querySelector(".bc-name");
+            if (nameEl) {
+                bName = nameEl.textContent.replace(/^[^a-zA-Z]+/, "").trim();
+            } else {
+                bName = "Bundle " + (idx + 1);
+            }
+            var bPrice = b.bundle_price;
+
+            var btn = document.createElement("button");
+            btn.className = "bundle-add-btn";
+            btn.textContent = "Add Bundle to Cart - $" + bPrice.toFixed(2);
+            btn.addEventListener("click", function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                var bid = "bundle-" + idx;
+                if (window.PD && typeof window.PD.addToCart === "function") {
+                    window.PD.addToCart(bid, bName, bPrice, "");
+                } else if (typeof addToCart === "function") {
+                    addToCart(bid, bName, bPrice, "");
+                }
+                this.textContent = "Added to Cart!";
+                this.style.background = "#10b981";
+                var self = this;
+                setTimeout(function() {
+                    self.textContent = "Add Bundle to Cart - $" + bPrice.toFixed(2);
+                    self.style.background = "#7c3aed";
+                }, 2000);
+            });
+            card.appendChild(btn);
+
+        })(cards[c], c);
+    }
+})();
+</script>
+
+
+<!-- PHOENIX_FOOTER_START -->
+
+<style>
+/* PhoenixDrop Footer v7.0 */
+.pd-ft{background:#f9fafb;border-top:1px solid #e5e7eb;padding:0;margin-top:60px;font-family:'Inter',sans-serif}
+.pd-ft-inner{max-width:1200px;margin:0 auto;padding:48px 24px 32px;display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap}
+.pd-ft-brand{flex:1;min-width:220px;max-width:340px}
+.pd-ft-logo{font-family:'Instrument Sans',sans-serif;font-size:24px;font-weight:700;color:#111827;margin:0 0 10px}
+.pd-ft-logo span{color:#7c3aed}
+.pd-ft-brand p{color:#6b7280;font-size:14px;line-height:1.6;margin:0}
+.pd-ft-cols{display:flex;gap:48px;flex-wrap:wrap}
+.pd-ft-col h4{font-family:'Instrument Sans',sans-serif;font-size:13px;font-weight:700;color:#111827;text-transform:uppercase;letter-spacing:0.05em;margin:0 0 14px}
+.pd-ft-col a{display:block;color:#6b7280;font-size:14px;text-decoration:none;margin:0 0 10px;transition:color 0.15s}
+.pd-ft-col a:hover{color:#7c3aed}
+.pd-ft-bottom{max-width:1200px;margin:0 auto;padding:20px 24px;border-top:1px solid #e5e7eb}
+.pd-ft-bottom span{color:#9ca3af;font-size:13px}
+@media(max-width:768px){
+.pd-ft-inner{flex-direction:column;align-items:center;text-align:center;padding:40px 20px 24px;gap:32px}
+.pd-ft-brand{max-width:100%;min-width:0}
+.pd-ft-cols{justify-content:center;gap:36px}
+.pd-ft-col{min-width:100px}
+.pd-ft-bottom{text-align:center;padding:16px 20px}
+}
+</style>
+
+<footer class="pd-ft">
+<div class="pd-ft-inner">
+<div class="pd-ft-brand">
+<div class="pd-ft-logo">Phoenix<span>Drop</span></div>
+<p>New drops every week.<br>Quality gadgets, free shipping.</p>
+</div>
+<div class="pd-ft-cols">
+<div class="pd-ft-col">
+<h4>Shop</h4>
+<a href="index.html">All Products</a>
+</div>
+<div class="pd-ft-col">
+<h4>Info</h4>
+<a href="shipping.html">Shipping Policy</a>
+<a href="about.html">About Us</a>
+<a href="faq.html">FAQ</a>
+<a href="returns.html">Returns</a>
+<a href="privacy.html">Privacy Policy</a>
+<a href="terms.html">Terms of Service</a>
+</div>
+<div class="pd-ft-col">
+<h4>Connect</h4>
+<a href="https://www.tiktok.com/@phoenixdropstore" target="_blank" rel="noopener">TikTok</a>
+<a href="https://www.instagram.com/phoenixdropstore" target="_blank" rel="noopener">Instagram</a>
+<a href="mailto:phoenixdrop.support@gmail.com">Contact</a>
+</div>
+</div>
+</div>
+<div class="pd-ft-bottom">
+<span>&copy; 2026 PhoenixDrop. All rights reserved.</span>
+</div>
+</footer>
+<!-- PHOENIX_FOOTER_END -->
+
+
+<!-- PHOENIX_CHAT_START -->
+
+<style>
+/* PhoenixDrop Chat Mobile Fix v7.1 */
+
+/* Force trigger to be a visible bottom-right pill on mobile */
+@media screen and (max-width: 640px) {
+  #pd-chat-trigger,
+  .pd-chat-trigger,
+  [onclick*="PD_Chat.toggle"],
+  [onclick*="PD_Chat.open"] {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 16px !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    writing-mode: horizontal-tb !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 99999 !important;
+    width: auto !important;
+    height: auto !important;
+    min-width: 56px !important;
+    min-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px 18px !important;
+    border-radius: 50px !important;
+    background: #7c3aed !important;
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    font-family: 'Inter', sans-serif !important;
+    box-shadow: 0 4px 15px rgba(124,58,237,0.35) !important;
+    cursor: pointer !important;
+    letter-spacing: 0 !important;
+    text-orientation: mixed !important;
+    border: none !important;
+  }
+}
+
+/* Chat window: full-width bottom sheet on mobile */
+@media screen and (max-width: 640px) {
+  #pd-chat-window,
+  .pd-chat-window {
+    position: fixed !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    top: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 85vh !important;
+    max-height: 85vh !important;
+    border-radius: 16px 16px 0 0 !important;
+    z-index: 100000 !important;
+  }
+
+  /* Close button in chat header - always visible and tappable */
+  #pd-chat-window .pd-chat-close,
+  #pd-chat-window [onclick*="close"],
+  #pd-chat-window [onclick*="toggle"],
+  .pd-chat-window .pd-chat-close,
+  .pd-chat-window [onclick*="close"],
+  .pd-chat-window [onclick*="toggle"],
+  .pd-chat-header button,
+  .pd-chat-header .close,
+  .pd-chat-header [class*="close"],
+  #pd-chat-window button[style*="close"],
+  #pd-chat-window .pd-chat-head button,
+  .pd-chat-head button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 20px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    background: rgba(255,255,255,0.2) !important;
+    border: none !important;
+    border-radius: 50% !important;
+    color: white !important;
+    position: relative !important;
+    z-index: 100001 !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+}
+</style>
+
+<script>
+/* Mobile close fallback: if no close button found, inject one */
+(function(){
+  function ensureMobileClose(){
+    var win = document.getElementById('pd-chat-window');
+    if(!win) return;
+    var head = win.querySelector('.pd-chat-head') || win.querySelector('.pd-chat-header') || win.firstElementChild;
+    if(!head) return;
+    var existing = head.querySelector('.pd-mob-close');
+    if(existing) return;
+    var btn = document.createElement('button');
+    btn.className = 'pd-mob-close';
+    btn.innerHTML = '&times;';
+    btn.setAttribute('aria-label','Close chat');
+    btn.style.cssText = 'position:absolute;top:10px;right:12px;width:36px;height:36px;min-width:36px;min-height:36px;border-radius:50%;background:rgba(255,255,255,0.2);border:none;color:white;font-size:22px;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:100002;-webkit-tap-highlight-color:transparent;';
+    btn.onclick = function(){
+      if(typeof PD_Chat !== 'undefined' && PD_Chat.toggle) { PD_Chat.toggle(); }
+      else if(typeof PD_Chat !== 'undefined' && PD_Chat.close) { PD_Chat.close(); }
+      else { win.style.display = 'none'; }
+    };
+    head.style.position = 'relative';
+    head.appendChild(btn);
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function(){ setTimeout(ensureMobileClose, 500); });
+  } else {
+    setTimeout(ensureMobileClose, 500);
+  }
+  var obs = new MutationObserver(function(){ setTimeout(ensureMobileClose, 200); });
+  obs.observe(document.body, {childList:true, subtree:true});
+})();
+</script>
+
+<!-- PhoenixDrop Smart Assistant v1.1 -->
+<style>
+/* ===== LAUNCHER: subtle on desktop, slim tab on mobile ===== */
+#pd-chat-launcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    height: 46px;
+    border-radius: 23px;
+    background: #7c3aed;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(124,58,237,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 16px 0 14px;
+    transition: all 0.25s ease;
+    opacity: 0.75;
+}
+#pd-chat-launcher:hover {
+    opacity: 1;
+    box-shadow: 0 4px 20px rgba(124,58,237,0.4);
+    transform: scale(1.03);
+}
+#pd-chat-launcher svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    flex-shrink: 0;
+}
+#pd-chat-launcher .pd-launch-label {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    white-space: nowrap;
+}
+#pd-chat-launcher .pd-close-icon { display: none; }
+#pd-chat-launcher.open .pd-chat-icon { display: none; }
+#pd-chat-launcher.open .pd-launch-label { display: none; }
+#pd-chat-launcher.open .pd-close-icon { display: block; }
+#pd-chat-launcher.open {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%%;
+    padding: 0;
+    opacity: 1;
+}
+
+/* ===== CHAT WINDOW ===== */
+#pd-chat-window {
+    position: fixed;
+    bottom: 76px;
+    right: 20px;
+    z-index: 9998;
+    width: 370px;
+    max-width: calc(100vw - 24px);
+    height: 500px;
+    max-height: calc(100vh - 100px);
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 12px 48px rgba(0,0,0,0.15);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #e5e7eb;
+}
+#pd-chat-window.open {
+    display: flex;
+    animation: pdChatSlideUp 0.25s ease-out;
+}
+@keyframes pdChatSlideUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#pd-chat-header {
+    background: #7c3aed;
+    color: #fff;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+#pd-chat-header-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%%;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+#pd-chat-header-info h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Instrument Sans', 'Inter', sans-serif;
+}
+#pd-chat-header-info p {
+    margin: 2px 0 0 0;
+    font-size: 11px;
+    opacity: 0.85;
+}
+
+#pd-chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #f9fafb;
+}
+#pd-chat-messages::-webkit-scrollbar { width: 4px; }
+#pd-chat-messages::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
+
+.pd-msg {
+    max-width: 85%%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+.pd-msg-bot {
+    background: #fff;
+    color: #111827;
+    align-self: flex-start;
+    border: 1px solid #e5e7eb;
+    border-bottom-left-radius: 4px;
+}
+.pd-msg-user {
+    background: #7c3aed;
+    color: #fff;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+.pd-msg-bot a {
+    color: #7c3aed;
+    text-decoration: underline;
+}
+
+.pd-typing {
+    display: flex;
+    gap: 4px;
+    padding: 10px 14px;
+    align-self: flex-start;
+}
+.pd-typing span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%%;
+    background: #d1d5db;
+    animation: pdTypingBounce 1.2s ease-in-out infinite;
+}
+.pd-typing span:nth-child(2) { animation-delay: 0.2s; }
+.pd-typing span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes pdTypingBounce {
+    0%%,80%%,100%% { transform: translateY(0); }
+    40%% { transform: translateY(-6px); }
+}
+
+.pd-quick-replies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+}
+.pd-quick-btn {
+    background: #f3f0ff;
+    color: #7c3aed;
+    border: 1px solid #ddd6fe;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: 'Inter', sans-serif;
+}
+.pd-quick-btn:hover {
+    background: #7c3aed;
+    color: #fff;
+    border-color: #7c3aed;
+}
+
+#pd-chat-input-area {
+    padding: 10px 14px;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    gap: 8px;
+    background: #fff;
+    flex-shrink: 0;
+}
+#pd-chat-input {
+    flex: 1;
+    border: 1px solid #e5e7eb;
+    border-radius: 24px;
+    padding: 10px 16px;
+    font-size: 14px;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.15s;
+}
+#pd-chat-input:focus { border-color: #7c3aed; }
+#pd-chat-send {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%%;
+    background: #7c3aed;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+    flex-shrink: 0;
+}
+#pd-chat-send:hover { background: #6d28d9; }
+#pd-chat-send svg { width: 18px; height: 18px; fill: #fff; }
+
+/* ===== MESSAGE FORM (escalation) ===== */
+#pd-msg-form {
+    display: none;
+    padding: 16px;
+    background: #f9fafb;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    overflow-y: auto;
+}
+#pd-msg-form h4 {
+    margin: 0 0 4px 0;
+    font-size: 15px;
+    color: #111827;
+    font-family: 'Instrument Sans', 'Inter', sans-serif;
+}
+#pd-msg-form p {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    color: #6b7280;
+}
+#pd-msg-form input,
+#pd-msg-form textarea,
+#pd-msg-form select {
+    width: 100%%;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    box-sizing: border-box;
+}
+#pd-msg-form input:focus,
+#pd-msg-form textarea:focus,
+#pd-msg-form select:focus {
+    border-color: #7c3aed;
+}
+#pd-msg-form textarea { resize: vertical; min-height: 80px; }
+#pd-msg-form-submit {
+    background: #7c3aed;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+    font-family: 'Inter', sans-serif;
+}
+#pd-msg-form-submit:hover { background: #6d28d9; }
+#pd-msg-form-success {
+    display: none;
+    text-align: center;
+    padding: 24px 16px;
+}
+#pd-msg-form-success svg { width: 48px; height: 48px; margin-bottom: 12px; }
+.pd-back-to-chat {
+    background: none;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #6b7280;
+    margin-top: 8px;
+    font-family: 'Inter', sans-serif;
+}
+.pd-back-to-chat:hover { border-color: #7c3aed; color: #7c3aed; }
+
+/* ===== MOBILE: slim side tab instead of floating circle ===== */
+@media (max-width: 640px) {
+    #pd-chat-launcher {
+        bottom: auto;
+        top: 50%%;
+        right: 0;
+        transform: translateY(-50%%) rotate(-90deg);
+        transform-origin: right center;
+        border-radius: 10px 10px 0 0;
+        padding: 6px 14px;
+        height: auto;
+        opacity: 0.85;
+        box-shadow: -2px 0 10px rgba(124,58,237,0.2);
+    }
+    #pd-chat-launcher:hover {
+        opacity: 1;
+        transform: translateY(-50%%) rotate(-90deg) scale(1);
+    }
+    #pd-chat-launcher svg { width: 16px; height: 16px; }
+    #pd-chat-launcher .pd-launch-label { font-size: 12px; }
+    #pd-chat-launcher.open {
+        top: auto;
+        bottom: 8px;
+        right: 8px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%%;
+        padding: 0;
+        transform: none;
+        opacity: 1;
+    }
+    #pd-chat-window {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: auto;
+        width: 100vw;
+        max-width: 100vw;
+        height: 85vh;
+        max-height: 85vh;
+        border-radius: 16px 16px 0 0;
+    }
+}
+</style>
+
+<button id="pd-chat-launcher" onclick="window.PD_Chat.toggle()" aria-label="Chat with us">
+    <svg class="pd-chat-icon" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+    <span class="pd-launch-label">Help</span>
+    <svg class="pd-close-icon" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+
+<div id="pd-chat-window">
+    <div id="pd-chat-header">
+        <div id="pd-chat-header-avatar">🔥</div>
+        <div id="pd-chat-header-info">
+            <h3>PhoenixDrop Support</h3>
+            <p>✅ Online now</p>
+        </div>
+    </div>
+    <div id="pd-chat-messages"></div>
+    <div id="pd-msg-form">
+        <h4>📩 Leave us a message</h4>
+        <p>We'll get back to you within 24 hours.</p>
+        <input type="text" id="pd-msg-name" placeholder="Your name" required>
+        <input type="email" id="pd-msg-email" placeholder="Your email" required>
+        <select id="pd-msg-topic">
+            <option value="">Select a topic...</option>
+            <option value="order">Order issue</option>
+            <option value="shipping">Shipping question</option>
+            <option value="return">Return / Refund</option>
+            <option value="product">Product question</option>
+            <option value="payment">Payment issue</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="text" id="pd-msg-order-id" placeholder="Order ID (if applicable)">
+        <textarea id="pd-msg-body" placeholder="Describe your issue in detail..."></textarea>
+        <button id="pd-msg-form-submit" onclick="window.PD_Chat.submitMessage()">Send Message</button>
+        <button class="pd-back-to-chat" onclick="window.PD_Chat.backToChat()">Back to chat</button>
+        <div id="pd-msg-form-success">
+            <svg viewBox="0 0 24 24" fill="#10b981"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            <h4 style="color:#111827;margin:0 0 4px 0;">Message sent!</h4>
+            <p style="color:#6b7280;font-size:13px;margin:0;">We'll reply to your email within 24 hours.</p>
+            <button class="pd-back-to-chat" onclick="window.PD_Chat.backToChat()" style="margin-top:16px;">Back to chat</button>
+        </div>
+    </div>
+    <div id="pd-chat-input-area">
+        <input type="text" id="pd-chat-input" placeholder="Type a message..." onkeydown="if(event.key==='Enter')window.PD_Chat.send()">
+        <button id="pd-chat-send" onclick="window.PD_Chat.send()">
+            <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        </button>
+    </div>
+</div>
+<script src="js/chatbot.js"></script>
+<!-- PHOENIX_CHAT_END -->
 </body>
 </html>
